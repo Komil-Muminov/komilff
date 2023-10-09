@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Person3D from '@/public/images/person-regist.png';
-import Moon3D from '@/public/images/moon-png.png';
+import robotpng from '@/public/images/robotpng.png';
 export default function Testimonials() {
 	return (
 		<section className='bg-gray-700 rounded-2xl mr-2'>
@@ -27,8 +26,7 @@ export default function Testimonials() {
 						<div className='w-1/2'>
 							{
 								<Image
-									className=' brightness-75 '
-									src={Moon3D}
+									src={robotpng}
 									alt='person3d'
 								/>
 							}
