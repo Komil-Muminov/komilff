@@ -7,10 +7,12 @@ export default function Footer() {
 			<div className='py-12 md:py-16'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6'>
 					<div className='md:flex md:items-center md:justify-center'>
-						<div className='text-gray-400 text-sm mr-4 text-center'>
-							<small> forever in my mind 01-04</small>.
-						</div>
-
+						{/* <div className='text-gray-400 text-sm mr-4 text-center'>
+							<small className='text-red-300 duration-300 ease-in-out hover:text-red-400 '>
+								{' '}
+								forever in my mind 01-04 Лалила.
+							</small>
+						</div> */}
 						<ul className='flex mb-4 md:order-1 md:ml-4 md:mb-0'>
 							<li className='ml-4'>
 								<p>Мой Инстаграм:</p>
@@ -50,6 +52,12 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div className='text-gray-400 text-sm mr-4 text-center mt-2'>
+					<small className='text-red-300 duration-300 ease-in-out pl-12 hover:text-red-400 '>
+						{' '}
+						forever in my mind 01-04 Лалила.
+					</small>
 				</div>
 			</div>
 		</footer>

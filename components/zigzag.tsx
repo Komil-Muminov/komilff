@@ -1,12 +1,10 @@
 import Image from 'next/image';
 
-// import FeatImage01 from '@/public/images/features-03-image-01.png';
 import FeatImage01 from '@/public/images/features-03-image-01.jpg';
-// import FeatImage02 from '@/public/images/features-03-image-02.png';
 import FeatImage02 from '@/public/images/features-03-image-02.jpeg';
-import FeatImage03 from '@/public/images/features-03-image-03.jpeg';
 import FeatImage04 from '@/public/images/features-03-image-03.jpeg.jpg';
-// import FeatImage03 from '@/public/images/features-03-image-03.png';
+
+import TypewriterComponent from 'typewriter-effect';
 
 export default function Zigzag() {
 	return (
