@@ -16,7 +16,7 @@ export default function Zigzag() {
 					{/* Section header */}
 					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
 						<h1 className='h2 mb-4'>Обо мне</h1>
-						<small>phenomen.</small>
+						<small>KM</small>
 					</div>
 
 					{/* Items */}
@@ -61,11 +61,11 @@ export default function Zigzag() {
 										забуду. Я стремлюсь к дальнейшему росту
 										и развитию, а также к применению своих
 										навыков в реальной жизни. <br />
-										<b>
+										{/* <b>
 											* Эта краткая автобиография была
 											написана с помощью искусственного
 											интеллекта.
-										</b>
+										</b> */}
 									</p>
 								</div>
 							</div>
