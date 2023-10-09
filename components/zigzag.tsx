@@ -1,8 +1,9 @@
+'use client';
 import Image from 'next/image';
-
 import FeatImage01 from '@/public/images/features-03-image-01.jpg';
 import FeatImage02 from '@/public/images/features-03-image-02.jpeg';
 import FeatImage04 from '@/public/images/features-03-image-03.jpeg.jpg';
+
 
 export default function Zigzag() {
 	return (

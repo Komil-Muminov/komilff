@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 
+
 export default function Footer() {
 	return (
 		<footer>
 			<div className='py-12 md:py-16'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6'>
 					<div className='md:flex md:items-center md:justify-center'>
+						
 						{/* <div className='text-gray-400 text-sm mr-4 text-center'>
 							<small className='text-red-300 duration-300 ease-in-out hover:text-red-400 '>
 								{' '}
@@ -15,11 +17,11 @@ export default function Footer() {
 						</div> */}
 						<ul className='flex mb-4 md:order-1 md:ml-4 md:mb-0'>
 							<li className='ml-4'>
-								<p>Мой Инстаграм:</p>
+								<p>Мой инстаграм:</p>
 
 								<Link
 									href='https://www.instagram.com/komilff/'
-									className='flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out'
+									className='flex justify-center items-center text-purple-600 bg-gray-800 duration-300 ease-in-out hover:text-gray-100 hover:bg-purple-600 rounded-full '
 									aria-label='Instagram'>
 									<svg
 										className='w-8 h-8 fill-current'
@@ -36,11 +38,11 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li className='ml-4'>
-								<p>Мой Фейсбук:</p>
+								<p>Мой фейсбук:</p>
 
 								<Link
 									href='https://facebook.com/profile.php?id=100011337580298&_se_imp=1YoEl3FbgNNKkDUwT'
-									className='flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out'
+									className='flex justify-center items-center text-purple-600 bg-gray-800   duration-300 ease-in-out hover:text-gray-100 hover:bg-purple-600 rounded-full '
 									aria-label='Facebook'>
 									<svg
 										className='w-8 h-8 fill-current'
@@ -52,11 +54,12 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
+					
 				</div>
 				<div className='text-gray-400 text-sm mr-4 text-center mt-2'>
 					<small className='text-red-300 duration-300 ease-in-out pl-12 hover:text-red-400 '>
 						{' '}
-						forever in my mind 01-04 Лалила.
+						forever in my mind 01.04 Лалила.
 					</small>
 				</div>
 			</div>

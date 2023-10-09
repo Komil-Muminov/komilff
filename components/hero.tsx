@@ -1,3 +1,5 @@
+'use client';
+import { Typewriter } from 'react-simple-typewriter';
 export default function Hero() {
 	return (
 		<section>
@@ -46,23 +48,30 @@ export default function Hero() {
 				{/* Hero content */}
 				<div className='relative pt-32 pb-10 md:pt-40 md:pb-16'>
 					{/* Section header */}
-					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
-						<h1
-							className='h1 mb-4'
-							data-aos='fade-up'>
-							СаламАлейкум !
-						</h1>
-						<p
-							className='text-xl text-gray-400 mb-8'
-							data-aos='fade-up'
-							data-aos-delay='200'>
-							Добро пожаловать на мой сайт!
-						</p>
-						<p className='text-md text-gray-500 mb-8'>
-							Здесь вы найдете краткую информацию о моей
-							автобиографии и моих интересах.
-						</p>
-					</div>
+					{
+						<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
+							<span
+								className='h1 mb-4'
+								data-aos='fade-up'>
+								Комил
+								<Typewriter
+									words={[' Муминов.', ' Muminoff.']}
+									loop
+									cursor
+								/>
+							</span>
+							<p
+								className='text-xl text-gray-400 mb-8'
+								data-aos='fade-up'
+								data-aos-delay='200'>
+								Добро пожаловать на мой сайт!
+							</p>
+							<p className='text-md text-gray-500 mb-8'>
+								Здесь вы найдете краткую информацию о моей
+								автобиографии и моих интересах.
+							</p>
+						</div>
+					}
 				</div>
 			</div>
 		</section>
