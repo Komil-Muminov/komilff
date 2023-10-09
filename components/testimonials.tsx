@@ -22,7 +22,9 @@ export default function Testimonials() {
 							</p>
 						</div>
 					</div> */}
-					<div className='flex items-center justify-center'>
+					<div
+						className='flex items-center justify-center '
+						data-aos='fade-rigth'>
 						<div className='w-1/2'>
 							{
 								<Image
@@ -41,15 +43,14 @@ export default function Testimonials() {
 								прошлом прошлое. И хотя новая глава в ее жизни
 								предоставила ей новые возможности, она всегда
 								будет хранить в сердце воспоминания о прошлом. */}
-								 In the past, there is an amazing story
-								where one special connection came to an end,
-								leading to a new beginning. This moment proved
-								to be an important step for this story, and it
-								moved on to the next chapter of its life,
-								leaving the past behind. And while the new
-								chapter in its life provided new opportunities,
-								it will always hold memories of the past in its
-								heart.
+								In the past, there is an amazing story where one
+								special connection came to an end, leading to a
+								new beginning. This moment proved to be an
+								important step for this story, and it moved on
+								to the next chapter of its life, leaving the
+								past behind. And while the new chapter in its
+								life provided new opportunities, it will always
+								hold memories of the past in its heart.
 							</p>
 						</div>
 					</div>
