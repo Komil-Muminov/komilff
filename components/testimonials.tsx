@@ -1,6 +1,6 @@
 import Image from 'next/image';
-// import Person3D from '@/public/images/person3D.png';
 import Person3D from '@/public/images/person-regist.png';
+import Moon3D from '@/public/images/moon-png.png';
 export default function Testimonials() {
 	return (
 		<section className='bg-gray-700 rounded-2xl mr-2'>
@@ -10,7 +10,6 @@ export default function Testimonials() {
 						<h2 className='h2 mb-4'>Work hard, be somebody.</h2>
 						<p className='text-xl text-gray-400'>
 							Be something more than what you see in the mirror.
-							lil wayne.
 						</p>
 					</div>
 					{/* <div className='flex items-center justify-center'>
@@ -26,20 +25,34 @@ export default function Testimonials() {
 					</div> */}
 					<div className='flex items-center justify-center'>
 						<div className='w-1/2'>
-							<Image
-								src={Person3D}
-								alt='person3d'
-							/>
+							{
+								<Image
+									className=' brightness-75 '
+									src={Moon3D}
+									alt='person3d'
+								/>
+							}
 						</div>
 						<div className='w-1/2'>
-							<h1 className='text-2xl text-white'>Education</h1>
+							<h1 className='text-center text-2xl'>Past Live</h1>{' '}
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Numquam dolores accusantium
-								doloribus dolor accusamus quisquam eveniet ipsa
-								saepe impedit reiciendis? Aliquam aut maxime
-								sint illo repudiandae architecto sapiente
-								maiores laborum.
+								{/* В прошлом существует удивительная история, где
+								одна особенная связь завершилась новым началом.
+								Этот момент оказался для этой истории важным
+								шагом, и она перешла к следующей главе своей
+								жизни, оставив в прошлом прошлое. И хотя новая
+								глава в ее жизни предоставила ей новые
+								возможности, она всегда будет хранить в сердце
+								воспоминания о прошлом. Но каждый раз при виде
+								ее прошлое изнутри сгораяет */}
+								In the past, there is an amazing story where one
+								special connection came to an end, leading to a
+								new beginning. This moment proved to be an
+								important step for this story, and it moved on
+								to the next chapter of its life, leaving the
+								past behind. And while the new chapter in its
+								life provided new opportunities, it will always
+								hold memories of the past in its heart.
 							</p>
 						</div>
 					</div>
