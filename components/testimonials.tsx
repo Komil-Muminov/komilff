@@ -24,7 +24,7 @@ export default function Testimonials() {
 					</div> */}
 					<div
 						className='flex items-center justify-center '
-						data-aos='fade-rigth'>
+						data-aos='fade-right'>
 						<div className='w-1/2'>
 							{
 								<Image
