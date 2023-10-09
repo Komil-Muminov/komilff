@@ -36,21 +36,20 @@ export default function Testimonials() {
 							<p>
 								{/* В прошлом существует удивительная история, где
 								одна особенная связь завершилась новым началом.
-								Этот момент оказался для этой истории важным
-								шагом, и она перешла к следующей главе своей
-								жизни, оставив в прошлом прошлое. И хотя новая
-								глава в ее жизни предоставила ей новые
-								возможности, она всегда будет хранить в сердце
-								воспоминания о прошлом. Но каждый раз при виде
-								ее прошлое изнутри сгораяет */}
-								In the past, there is an amazing story where one
-								special connection came to an end, leading to a
-								new beginning. This moment proved to be an
-								important step for this story, and it moved on
-								to the next chapter of its life, leaving the
-								past behind. And while the new chapter in its
-								life provided new opportunities, it will always
-								hold memories of the past in its heart.
+								Этот момент оказался для нее важным шагом, и она
+								перешла к следующей главе своей жизни, оставив в
+								прошлом прошлое. И хотя новая глава в ее жизни
+								предоставила ей новые возможности, она всегда
+								будет хранить в сердце воспоминания о прошлом. */}
+								 In the past, there is an amazing story
+								where one special connection came to an end,
+								leading to a new beginning. This moment proved
+								to be an important step for this story, and it
+								moved on to the next chapter of its life,
+								leaving the past behind. And while the new
+								chapter in its life provided new opportunities,
+								it will always hold memories of the past in its
+								heart.
 							</p>
 						</div>
 					</div>
