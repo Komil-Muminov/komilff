@@ -50,7 +50,7 @@ export default function Testimonials() {
 								to the next chapter of its life, leaving the
 								past behind. And while the new chapter in its
 								life provided new opportunities, it will always
-								hold memories of the past in its heart. KMMMMMM
+								hold memories of the past in its heart. 
 							</p>
 						</div>
 					</div>
