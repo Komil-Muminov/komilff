@@ -57,11 +57,6 @@ export default function Zigzag() {
 										забуду. Я стремлюсь к дальнейшему росту
 										и развитию, а также к применению своих
 										навыков в реальной жизни. <br />
-										{/* <b>
-											* Эта краткая автобиография была
-											написана с помощью искусственного
-											интеллекта.
-										</b> */}
 									</p>
 								</div>
 							</div>
@@ -89,7 +84,6 @@ export default function Zigzag() {
 									<h3 className='h3 mb-3'>
 										Мои навыки программирования
 									</h3>
-
 									<ul className='text-lg text-gray-400 -mb-2'>
 										<li className='flex items-center mb-2'>
 											<svg
