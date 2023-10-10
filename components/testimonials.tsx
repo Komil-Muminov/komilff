@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import robotpng from '@/public/images/robotpng.png';
+import robing from '@/public/images/robotpng.png';
 export default function Testimonials() {
 	return (
-		<section className='bg-gray-700 rounded-2xl mr-2'>
+		<section className='bg-gray-700 rounded-2xl mr-2 '>
 			<div className='max-w-6xl mx-auto px-4 sm:px-6'>
 				<div className='py-12 md:py-20 border-t border-gray-800'>
 					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
@@ -28,7 +28,7 @@ export default function Testimonials() {
 						<div className='w-1/2'>
 							{
 								<Image
-									src={robotpng}
+									src={robing}
 									alt='person3d'
 								/>
 							}

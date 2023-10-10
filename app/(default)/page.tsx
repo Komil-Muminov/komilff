@@ -8,6 +8,7 @@ import Hero from '@/components/hero';
 // import Newsletter from '@/components/newsletter';
 import Zigzag from '@/components/zigzag';
 import Testimonials from '@/components/testimonials';
+import ToDo from '@/components/ToDo';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			{/* <Features /> */}
 			<Zigzag />
 			<Testimonials />
+			<ToDo />
 			{/* <Newsletter /> */}
 		</>
 	);
