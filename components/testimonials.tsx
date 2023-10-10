@@ -36,13 +36,6 @@ export default function Testimonials() {
 						<div className='w-1/2'>
 							<h1 className='text-center text-2xl'>Past Live</h1>{' '}
 							<p className='ml-1'>
-								{/* В прошлом существует удивительная история, где
-								одна особенная связь завершилась новым началом.
-								Этот момент оказался для нее важным шагом, и она
-								перешла к следующей главе своей жизни, оставив в
-								прошлом прошлое. И хотя новая глава в ее жизни
-								предоставила ей новые возможности, она всегда
-								будет хранить в сердце воспоминания о прошлом. */}
 								In the past, there was an amazing story where
 								one special connection came to an end, leading
 								to a new beginning. This moment proved to be an
