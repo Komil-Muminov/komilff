@@ -2,13 +2,18 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"cSpell.words": [
+		"Additem",
 		"Lalila",
+		"Todos",
+		"uuidv",
 		"Добавить",
 		"здесь",
 		"Можете",
 		"прошлом",
+		"Редактировать",
 		"свои",
 		"слова",
+		"Сохранить",
 		"текст",
 		"удивительная"
 	]
