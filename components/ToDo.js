@@ -42,7 +42,6 @@ const ToDo = () => {
 	return (
 		<>
 			<section className='flex bg-slate-900 p-44 rounded-md mt-2 '>
-				{' '}
 				<div className='flex flex-1 justify-center'>
 					{' '}
 					<button
@@ -53,7 +52,7 @@ const ToDo = () => {
 								: 'hidden'
 						}`}>
 						{' '}
-						ПОКАЗАТЬ{' '}
+						ПОКАЗАТЬ MINI-APP{' '}
 					</button>{' '}
 					<button
 						onClick={() => setShowTodo(!showTodo)}
