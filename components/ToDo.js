@@ -34,7 +34,7 @@ const ToDo = () => {
 	return (
 		<>
 			<div className='bg-gray-800  p-2 rounded-md m-2'>
-				<h1 className='text-center'> Mini-App TodoList @@@</h1>
+				<h1 className='text-center'> Mini-App TodoList</h1>
 				<div className='flex justify-center items-center mt-3'>
 					<section className='flex justify-center items-center ml-2 mt-2  '>
 						<section>
