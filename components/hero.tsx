@@ -57,7 +57,6 @@ export default function Hero() {
 								<Typewriter
 									words={[' Муминов.', ' Muminoff.']}
 									loop
-									cursor
 								/>
 							</span>
 							<p
