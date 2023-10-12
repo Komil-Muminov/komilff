@@ -75,7 +75,7 @@ const ToDo = () => {
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
 							/>
-							<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800 '>
+							<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'>
 								Добавить
 							</button>
 						</form>
@@ -90,7 +90,7 @@ const ToDo = () => {
 											<div className='edit-save '>
 												<input
 													type='text'
-													className='mr-2 rounded-md'
+													className='rounded-md mr-1 w-full md:f-1/2'
 													value={userInput}
 													onChange={(e) =>
 														setUserInput(
@@ -99,7 +99,7 @@ const ToDo = () => {
 													}
 												/>
 												<button
-													className='border-none rounded-md p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
+													className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
 													onClick={() =>
 														handleSaveEditedItem(
 															item.id,
@@ -112,7 +112,7 @@ const ToDo = () => {
 										) : (
 											<div className='btn-edit '>
 												<button
-													className='border-none rounded-md p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
+													className='flex flex-wrap w-1/1 md:w-1/1 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
 													onClick={() =>
 														handleIsEditingMode(
 															item.id,
