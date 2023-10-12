@@ -41,7 +41,7 @@ const ToDo = () => {
 
 	return (
 		<>
-			<section className='flex bg-slate-900 p-44 rounded-md mt-2 '>
+			<section className='flex bg-slate-900 p-48 rounded-md mt-2 mb-5 '>
 				<div className='flex flex-1 justify-center'>
 					{' '}
 					<button
@@ -66,8 +66,8 @@ const ToDo = () => {
 				</div>{' '}
 			</section>
 			{showTodo && (
-				<section className='flex flex-wrap flex-col  gap-2 mt-2  '>
-					<div className='flex justify-center  mb-3'>
+				<section className='flex flex-wrap flex-col  gap-2 bg-slate-700  m-4  p-44 rounded-md'>
+					<div className='flex justify-center mt-2'>
 						<form onSubmit={handleSubmit}>
 							<input
 								className='rounded-md mr-2'
@@ -87,10 +87,10 @@ const ToDo = () => {
 									<li>
 										{item.todo}
 										{item.isEditing ? (
-											<div className='edit-save'>
+											<div className='edit-save '>
 												<input
 													type='text'
-													className='mr-2'
+													className='mr-2 rounded-md'
 													value={userInput}
 													onChange={(e) =>
 														setUserInput(
@@ -110,7 +110,7 @@ const ToDo = () => {
 												</button>
 											</div>
 										) : (
-											<div className='btn-edit'>
+											<div className='btn-edit '>
 												<button
 													className='border-none rounded-md p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
 													onClick={() =>

@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
-import FeatImage01 from '@/public/images/features-03-image-01.jpg';
-import FeatImage02 from '@/public/images/features-03-image-02.jpeg';
-import FeatImage04 from '@/public/images/features-03-image-03.jpeg.jpg';
+import FeatImage01 from '@/public/images/features-03-image-01.webp';
+import FeatImage02 from '@/public/images/features-03-image-02.webp';
+import FeatImage04 from '@/public/images/features-03-image-03.webp';
 
 export default function Zigzag() {
 	return (
