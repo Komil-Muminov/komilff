@@ -6,7 +6,7 @@ const ToDo = () => {
 	const [userInputToObj, setUserInputToObj] = React.useState([]);
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (userInput !== ''.trim()) {
+		if (userInput.trim() !== '') {
 			setUserInputToObj((prev) => [
 				...prev,
 				{ id: uuidv4(), todo: userInput, isEditing: false },
