@@ -41,7 +41,7 @@ const ToDo = () => {
 
 	return (
 		<>
-			<div className='flex  rounded-md mt-2 mb-5 '>
+			<div className='flex justify-center items-center w-1/1 rounded-md mt-2 mb-5 '>
 				<div className='flex flex-1 justify-center'>
 					{' '}
 					<button
@@ -67,7 +67,7 @@ const ToDo = () => {
 			</div>
 			{showTodo && (
 				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-800 '>
-					<div className='flex justify-center mt-2'>
+					<div className='flex justify-center items-center mt-2'>
 						<form onSubmit={handleSubmit}>
 							<input
 								className='rounded-md mr-1 w-full md:f-1/2'
@@ -75,17 +75,21 @@ const ToDo = () => {
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
 							/>
-							<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'>
-								Добавить
-							</button>
+							<div className='flex justify-center items-center add-btn'>
+								<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'>
+									Добавить
+								</button>
+							</div>
 						</form>
 					</div>
 					<div className='map-items flex flex-col justify-center items-center'>
 						{userInputToObj.map((item) => (
-							<div className='flex gap-3 mb-3 '>
-								<ul>
+							<div className='flex justify-center items-center gap-3 mb-3 '>
+								<ul className='flex justify-center items-center mb-4'>
 									<li>
-										{item.todo}
+										<div className='flex justify-center items-center'>
+											{item.todo}
+										</div>
 										{item.isEditing ? (
 											<div className='edit-save '>
 												<input
@@ -98,21 +102,23 @@ const ToDo = () => {
 														)
 													}
 												/>
-												<button
-													className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
-													onClick={() =>
-														handleSaveEditedItem(
-															item.id,
-															userInput,
-														)
-													}>
-													Сохранить
-												</button>
+												<div className='flex w-1/1 justify-center items-center '>
+													<button
+														className='flex flex-wrap w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800 md:w-1/2 '
+														onClick={() =>
+															handleSaveEditedItem(
+																item.id,
+																userInput,
+															)
+														}>
+														Сохранить
+													</button>
+												</div>
 											</div>
 										) : (
-											<div className='btn-edit '>
+											<div className='flex flex-wrap w-1/1 md:w-1/1 btn-edit '>
 												<button
-													className='flex flex-wrap w-1/1 md:w-1/1 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
+													className=' border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
 													onClick={() =>
 														handleIsEditingMode(
 															item.id,
