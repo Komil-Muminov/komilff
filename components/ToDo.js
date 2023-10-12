@@ -66,16 +66,16 @@ const ToDo = () => {
 				</div>{' '}
 			</div>
 			{showTodo && (
-				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-700 '>
+				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-800 '>
 					<div className='flex justify-center mt-2'>
 						<form onSubmit={handleSubmit}>
 							<input
-								className='rounded-md mr-1'
+								className='rounded-md mr-1 w-full md:f-1/2'
 								type='text'
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
 							/>
-							<button className='flex flex-wrap w-full md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800 '>
+							<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800 '>
 								Добавить
 							</button>
 						</form>
