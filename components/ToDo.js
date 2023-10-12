@@ -41,7 +41,7 @@ const ToDo = () => {
 
 	return (
 		<>
-			<section className='flex bg-slate-900 p-48 rounded-md mt-2 mb-5 '>
+			<div className='flex  rounded-md mt-2 mb-5 '>
 				<div className='flex flex-1 justify-center'>
 					{' '}
 					<button
@@ -64,18 +64,18 @@ const ToDo = () => {
 						Скрыть
 					</button>
 				</div>{' '}
-			</section>
+			</div>
 			{showTodo && (
-				<section className='flex flex-wrap flex-col  gap-2 bg-slate-700  m-4  p-44 rounded-md'>
+				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-700 '>
 					<div className='flex justify-center mt-2'>
 						<form onSubmit={handleSubmit}>
 							<input
-								className='rounded-md mr-2'
+								className='rounded-md mr-1'
 								type='text'
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
 							/>
-							<button className='border-none rounded-md p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'>
+							<button className='flex flex-wrap w-full md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800 '>
 								Добавить
 							</button>
 						</form>
@@ -127,7 +127,7 @@ const ToDo = () => {
 							</div>
 						))}
 					</div>
-				</section>
+				</div>
 			)}
 		</>
 	);
