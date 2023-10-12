@@ -6,13 +6,15 @@ const ToDo = () => {
 	const [userInputToObj, setUserInputToObj] = React.useState([]);
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setUserInputToObj((prev) => [
-			...prev,
-			{ id: uuidv4(), todo: userInput, isEditing: false }, // Ошибка исправлена
-		]);
-		setUserInput('');
-
-		console.log(userInputToObj);
+		if (userInput !== ''.trim()) {
+			setUserInputToObj((prev) => [
+				...prev,
+				{ id: uuidv4(), todo: userInput, isEditing: false },
+			]);
+			setUserInput('');
+		} else {
+			alert('Пустая строка !!!!');
+		}
 	};
 
 	const handleIsEditingMode = (itemId) => {
@@ -23,7 +25,6 @@ const ToDo = () => {
 					: item,
 			),
 		);
-		// Ваш код здесь.
 	};
 	const handleSaveEditedItem = (itemId, userInput) => {
 		setUserInputToObj((prev) =>
@@ -34,7 +35,6 @@ const ToDo = () => {
 			),
 		);
 		setUserInput('');
-		// Ваш код здесь.
 	};
 
 	const [showTodo, setShowTodo] = React.useState(false);
@@ -66,7 +66,7 @@ const ToDo = () => {
 				</div>{' '}
 			</div>
 			{showTodo && (
-				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-800 '>
+				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-900 rounded-md pt-5 '>
 					<div className='flex justify-center items-center mt-2'>
 						<form onSubmit={handleSubmit}>
 							<input
