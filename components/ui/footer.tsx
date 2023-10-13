@@ -53,9 +53,9 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className='text-gray-400 text-sm mr-4 text-center mt-2'>
-					<small className='text-red-300 duration-300 ease-in-out pl-12 hover:text-red-400 '>
+					<small className='text-red-300 duration-300 ease-in-out pl-12 hover:text-red-400 text-xl '>
 						{' '}
-						01.04 Лалила.
+						01.04 ∞
 					</small>
 				</div>
 			</div>
