@@ -12,7 +12,6 @@ export default function Zigzag() {
 					{/* Section header */}
 					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
 						<h1 className='h2 mb-4'>Обо мне</h1>
-						<small>KM</small>
 					</div>
 
 					{/* Items */}
