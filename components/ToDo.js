@@ -67,10 +67,16 @@ const ToDo = () => {
 			</div>
 			{showTodo && (
 				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-900 rounded-md pt-5 '>
-					<div className='flex justify-center items-center mt-2'>
+					<div
+						className={`${
+							userInputToObj.some((item) => item.isEditing)
+								? 'hidden'
+								: 'flex justify-center items-center mt-2'
+						}`}>
+						{/* flex justify-center items-center mt-2 */}
 						<form onSubmit={handleSubmit}>
 							<input
-								className='rounded-md mr-1 w-full md:f-1/2'
+								className='rounded-md mr-1 w-full md:f-1/2 text-black'
 								type='text'
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
@@ -87,15 +93,16 @@ const ToDo = () => {
 							<div className='flex justify-center items-center gap-3 mb-3 '>
 								<ul className='flex justify-center items-center mb-4'>
 									<li>
-										<div className='flex justify-center items-center'>
+										<div className='flex justify-center items-center text-white'>
 											{item.todo}
 										</div>
 										{item.isEditing ? (
 											<div className='edit-save '>
 												<input
 													type='text'
-													className='rounded-md mr-1 w-full md:f-1/2'
+													className='rounded-md mr-1 w-full md:f-1/2 overflow-scroll text-black'
 													value={userInput}
+													placeholder={`Режим редактирование`}
 													onChange={(e) =>
 														setUserInput(
 															e.target.value,
