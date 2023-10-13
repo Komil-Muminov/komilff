@@ -66,7 +66,7 @@ const ToDo = () => {
 				</div>{' '}
 			</div>
 			{showTodo && (
-				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-900 rounded-md pt-5 '>
+				<div className='flex flex-wrap flex-col justify-center items-center  gap-2 bg-slate-900 rounded-md py-5 '>
 					<div
 						className={`${
 							userInputToObj.some((item) => item.isEditing)
