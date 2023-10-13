@@ -9,10 +9,17 @@ import Hero from '@/components/hero';
 import Zigzag from '@/components/zigzag';
 import Testimonials from '@/components/testimonials';
 import ToDo from '@/components/ToDo';
-
+import Head from 'next/head';
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<link
+					rel='icon'
+					href='/favicon.ico'
+				/>
+			</Head>
+
 			<Hero />
 			{/* <Features /> */}
 			<Zigzag />
