@@ -15,7 +15,7 @@ export default function Footer() {
 								forever in my mind 01-04 Лалила.
 							</small>
 						</div> */}
-						<ul className='flex mb-4 md:order-1 md:ml-4 md:mb-0'>
+						<ul className='flex flex-wrap  justify-center items-center mb-4 md:order-1 md:ml-4 md:mb-0'>
 							<li className='ml-4'>
 								<p>Мой инстаграм:</p>
 
