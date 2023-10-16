@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Delete,TurnedInNot } from '@mui/icons-material';
 const ToDo = () => {
 	const [userInput, setUserInput] = React.useState('');
 	const [userInputToObj, setUserInputToObj] = React.useState([]);
@@ -38,6 +39,11 @@ const ToDo = () => {
 	};
 
 	const [showTodo, setShowTodo] = React.useState(false);
+
+	const handleRemoveItem = (id) => {
+		setUserInputToObj(prev=>prev.filter((item)=>item.id !=id))
+	  // Ваш код здесь.
+	};
 
 	return (
 		<>
@@ -93,8 +99,14 @@ const ToDo = () => {
 							<div className='flex justify-center items-center gap-3 mb-3 '>
 								<ul className='flex justify-center items-center mb-4'>
 									<li>
-										<div className='flex justify-center items-center text-white'>
+										<div className='flex justify-center items-center text-white '>
+											<div className='bg-orange-700 inline-block p-2 rounded-md '>
+											<TurnedInNot/>
 											{item.todo}
+											</div>
+											<button className=' border-none rounded-md p-2 mt-1 ml-2 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800' onClick={()=>handleRemoveItem(item.id)}>
+												<Delete/>
+											</button>
 										</div>
 										{item.isEditing ? (
 											<div className='edit-save '>
