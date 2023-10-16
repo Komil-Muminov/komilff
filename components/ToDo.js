@@ -87,7 +87,7 @@ const ToDo = () => {
 								value={userInput}
 								onChange={(e) => setUserInput(e.target.value)}
 							/>
-							<div className='flex justify-center items-center add-btn'>
+							<div className='flex justify-center items-center add-btn flex-wrap'>
 								<button className='flex flex-wrap w-1/2 md:w-1/2 border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'>
 									Добавить
 								</button>
@@ -117,7 +117,7 @@ const ToDo = () => {
 													placeholder={`Режим редактирование`}
 													onChange={(e) =>
 														setUserInput(
-															e.target.value,
+															e.target.value, 
 														)
 													}
 												/>
@@ -135,6 +135,7 @@ const ToDo = () => {
 												</div>
 											</div>
 										) : (
+											<>
 											<div className='flex flex-wrap w-1/1 md:w-1/1 btn-edit '>
 												<button
 													className=' border-none rounded-md p-1 mt-1 md:p-2 bg-blue-700 transition duration-200 hover:bg-blue-800'
@@ -145,7 +146,9 @@ const ToDo = () => {
 													}>
 													Редактировать
 												</button>
+												
 											</div>
+											</>
 										)}
 									</li>
 								</ul>
