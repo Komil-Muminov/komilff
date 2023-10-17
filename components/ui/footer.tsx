@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { Mail, Instagram, Facebook } from '@mui/icons-material';
+import { Mail, Instagram, Facebook, ContactMail } from '@mui/icons-material';
 export default function Footer() {
 	return (
 		<footer>
@@ -44,6 +44,18 @@ export default function Footer() {
 								<Link
 									target='_blank'
 									href='https://docs.google.com/forms/d/e/1FAIpQLSfZMHCZ6q3kblUIamI9QMwqrL-JIwKolEC9Ax-23kDL49HBpQ/viewform?usp=sf_link'
+									className='flex justify-center items-center text-purple-600 bg-gray-800   duration-300 ease-in-out hover:text-gray-100 hover:bg-purple-600 rounded-full '
+									aria-label='Facebook'>
+									<ContactMail />
+								</Link>
+							</li>
+
+							<li className='ml-4'>
+								<p>Написать мне:</p>
+
+								<Link
+									target='_blank'
+									href='mailto:kmuminov0104@gmail.com'
 									className='flex justify-center items-center text-purple-600 bg-gray-800   duration-300 ease-in-out hover:text-gray-100 hover:bg-purple-600 rounded-full '
 									aria-label='Facebook'>
 									<Mail />
