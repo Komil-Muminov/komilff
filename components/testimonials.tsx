@@ -37,7 +37,7 @@ export default function Testimonials() {
                 chapter of its life, leaving the past behind. And while the new
                 chapter in its life provided new opportunities, it will always
                 hold memories of the past in its heart. The name of this story
-                is 'Lalila'. -
+                is 'Lalila'.
               </p>
             </div>
           </div>
