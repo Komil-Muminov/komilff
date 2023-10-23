@@ -19,7 +19,6 @@ export default function Home() {
 					href='/favicon.ico'
 				/>
 			</Head>
-
 			<Hero />
 			{/* <Features /> */}
 			<Zigzag />
