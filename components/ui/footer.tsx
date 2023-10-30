@@ -75,6 +75,7 @@ export default function Footer() {
 					</small>
 				</div>
 			</div>
+		
 		</footer>
 	);
 }
