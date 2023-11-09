@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import { Mail, Instagram, Facebook, ContactMail } from '@mui/icons-material';
+"use client";
+import React from "react";
+import Link from "next/link";
+import { Mail, Instagram, Facebook, ContactMail } from "@mui/icons-material";
 export default function Footer() {
 	return (
 		<footer>
@@ -75,7 +75,6 @@ export default function Footer() {
 					</small>
 				</div>
 			</div>
-		
 		</footer>
 	);
 }
