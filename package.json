@@ -6,7 +6,7 @@
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
-		"km": "next dev",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -38,3 +38,4 @@
 		"tailwindcss": "^3.3.2"
 	}
 }
+

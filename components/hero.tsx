@@ -1,9 +1,23 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
+import { Mail, Instagram, Facebook, ContactMail } from "@mui/icons-material";
 export default function Hero() {
-  return (
+	return (
 		<section>
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+				{/* <div className="w-auto">
+					<li className="">
+						<Link
+							target="_blank"
+							href="https://www.instagram.com/komilff/"
+							className="flex justify-center items-center text-purple-600 bg-gray-800 duration-300 ease-in-out hover:text-gray-100 hover:bg-purple-600 rounded-full "
+							aria-label="Instagram"
+						>
+							<Instagram />
+						</Link>
+					</li>
+				</div> */}
 				{/* Illustration behind hero content */}
 				<div
 					className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
@@ -28,15 +42,8 @@ export default function Hero() {
 								y2="577.921"
 								gradientUnits="userSpaceOnUse"
 							>
-								<stop
-									stopColor="#5D5DFF"
-									stopOpacity=".01"
-								/>
-								<stop
-									offset="1"
-									stopColor="#5D5DFF"
-									stopOpacity=".32"
-								/>
+								<stop stopColor="#5D5DFF" stopOpacity=".01" />
+								<stop offset="1" stopColor="#5D5DFF" stopOpacity=".32" />
 							</linearGradient>
 						</defs>
 						<path
@@ -53,15 +60,9 @@ export default function Hero() {
 					{/* Section header */}
 					{
 						<div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-							<span
-								className="h1 mb-4"
-								data-aos="fade-up"
-							>
+							<span className="h1 mb-4" data-aos="fade-up">
 								Комил
-								<Typewriter
-									words={[" Муминов.", " Muminoff."]}
-									loop
-								/>
+								<Typewriter words={[" Муминов.", " Muminoff."]} loop />
 							</span>
 							<p
 								className="text-xl text-gray-400 mb-8"
@@ -92,3 +93,4 @@ export default function Hero() {
 		</section>
 	);
 }
+
