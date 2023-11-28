@@ -1,8 +1,7 @@
 {
-	"name": "bio",
+	"name": "komil",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "https:/Komil-Muminov.github.io/Km-test",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -40,3 +39,4 @@
 		"vite": "^4.4.5"
 	}
 }
+
