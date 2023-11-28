@@ -12,7 +12,7 @@ const Projects = () => {
 								className="project-item-link"
 								target="_blank"
 							>
-								Нажми на меня !!!!
+								Нажми на меня ss
 							</a>
 							<h3>Название: </h3>
 						</article>
