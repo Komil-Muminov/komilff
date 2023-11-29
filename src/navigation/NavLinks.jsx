@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./css/navigation.css";
 import Logo from "./img/logo.png";
+
 const NavLinks = () => {
 	return (
 		<header className="sections">
@@ -10,15 +11,10 @@ const NavLinks = () => {
 					<img src={Logo} alt="Logo" className=" inline-block md:mr-[256px]" />
 				</a>
 				<nav className="links flex flex-wrap gap-[71px] justify-center items-center">
-					<a href="#" className="header-link">
-						HOME
-					</a>
-					<a href="#" className="header-link">
-						ABOUT
-					</a>
-					<a href="#" className="header-link">
-						CONTACTS
-					</a>
+					<Link to="/Home">HOME</Link>
+					<Link to="/PersonPage">PersonPage</Link>
+					<Link to="/Experience">Experience</Link>
+					<Link to="/Contacts">Contacts</Link>
 				</nav>
 			</div>
 		</header>

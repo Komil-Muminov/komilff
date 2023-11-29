@@ -1,20 +1,68 @@
+import { useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// -----------------------------------------------------------------
 import NavLinks from "./navigation/NavLinks";
+import Home from "./components/Home/Home";
 import PersonPage from "./components/Person/PersonPage";
 import Experience from "./components/Experience/Experience";
-// import Projects from "./components/Projects/Projects";
 import Contacts from "./components/Contacts/Contacts";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
-
 function App() {
+	useEffect(() => {
+		AOS.init({
+			delay: 300,
+		});
+		AOS.refresh();
+	}, []);
 	return (
-		<div className="container">
+		<>
+			{/* <Editing /> */}
+
 			<NavLinks />
-			<PersonPage />
-			{/* <Projects /> */}
-			<Experience />
-			<Contacts />
+			<Routes>
+				<Route path="*" element={<ErrorPage />} />
+				<Route path="/" element={<Navigate to="/Home" />} />
+				<Route
+					path="/Home"
+					element={
+						<div data-aos="fade-left">
+							<Home />
+						</div>
+					}
+				/>
+
+				<Route
+					path="/PersonPage"
+					element={
+						<div data-aos="fade-right">
+							<PersonPage />
+						</div>
+					}
+				/>
+
+				<Route
+					path="/Contacts"
+					element={
+						<div data-aos="fade-left">
+							<Contacts />
+						</div>
+					}
+				/>
+				<Route
+					path="/Experience"
+					element={
+						<div data-aos="fade-right">
+							<Experience />
+						</div>
+					}
+				/>
+			</Routes>
 			<Footer />
-		</div>
+		</>
 	);
 }
 
