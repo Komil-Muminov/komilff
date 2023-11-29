@@ -13,7 +13,6 @@ function App() {
 			<PersonPage />
 			<Experience />
 			<Projects />
-			11111111111111
 		</div>
 	);
 }
