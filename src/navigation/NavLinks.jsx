@@ -11,13 +11,13 @@ const NavLinks = () => {
 				</a>
 				<nav className="links flex flex-wrap gap-[71px] justify-center items-center">
 					<a href="#" className="header-link">
-						3333
+						HOME
 					</a>
 					<a href="#" className="header-link">
-						3333
+						ABOUT
 					</a>
 					<a href="#" className="header-link">
-						3333
+						CONTACTS
 					</a>
 				</nav>
 			</div>
