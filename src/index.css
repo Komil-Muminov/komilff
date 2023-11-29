@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
 	box-sizing: border-box;
 	background-color: #000;
 	color: #fff;
 	font-family: "Inter", "Roboto", sans-serif;
+	user-select: none;
 }
 
 .container {
@@ -27,7 +28,7 @@
 }
 
 .sections-desc {
-	color: #c5c5c5;
+	color: #f3f3f3;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 300;

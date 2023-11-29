@@ -13,10 +13,10 @@ const PersonPage = () => {
 					<div className="text-wrapper flex justify-center items-center flex-col flex-wrap">
 						<h1 className="sections-title person-title ">I'M KOMIL MUMINOV.</h1>
 						<p className="sections-desc person-desc px-4 ">
-							I am a seasoned full-stack software engineer with over 8 years of
-							professional experience, specializing in backend development. My
-							expertise lies in crafting robust and scalable SaaS-based
-							architectures on the Amazon AWS platform.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+							quisquam vel eius facere in, tempore adipisci expedita nihil.
+							Similique, cumque. Delectus corrupti ut quas at impedit rem
+							quibusdam, fugit quidem!
 						</p>
 					</div>
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
