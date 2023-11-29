@@ -31,7 +31,7 @@ const PersonPage = () => {
 					{/* EXPERIENCE */}
 					<h2 className="text-center mb-[48px]">EXPERIENCE WITH</h2>
 
-					<div className="experience-wrapper flex gap-4 justify-center items-center">
+					<div className="experience-wrapper flex gap-4 md:gap-[60px] justify-center items-center">
 						<svg
 							width="38"
 							height="42"
