@@ -1,34 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./css/navigation.css";
+import Logo from "./img/logo.png";
 const NavLinks = () => {
 	return (
-		<>
-			<header className="header-section">
-				<div className="container flex justify-center items-center gap-64">
-					<img src="src\navigation\img\logo.png" alt=" log" />
-					<nav className="nav flex justify-between items-center">
-						<ul className="nav__list flex  gap-[71px]">
-							<li className="nav__item">
-								<a href="#" className="nav__link">
-									HOME
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="#" className="nav__link">
-									HOME
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="#" className="nav__link">
-									HOME
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-		</>
+		<header className="sections">
+			<div className="container flex flex-wrap flex-col justify-center items-center md:flex-row">
+				<a href="#" className="flex flex-col  md:flex md:flex-row  min-w-max">
+					<img src={Logo} alt="Logo" className=" inline-block md:mr-[256px]" />
+				</a>
+				<nav className="links flex flex-wrap gap-[71px] justify-center items-center">
+					<a href="#" className="header-link">
+						3333
+					</a>
+					<a href="#" className="header-link">
+						3333
+					</a>
+					<a href="#" className="header-link">
+						3333
+					</a>
+				</nav>
+			</div>
+		</header>
 	);
 };
 
