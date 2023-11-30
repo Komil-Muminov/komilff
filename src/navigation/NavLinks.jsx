@@ -35,7 +35,7 @@ const NavLinks = () => {
 
 			<span
 				onClick={() => setIsMobile(!isMobile)}
-				className="flex justify-end items-center p-[1.7em] md:hidden"
+				className="flex justify-end items-center px-[1.7em] pt-[1.6em] md:hidden"
 			>
 				<Menu className="isMobile-icon" />
 			</span>
