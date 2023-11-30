@@ -1,30 +1,52 @@
+import "./css/Footer.css";
+import { Instagram, Email, GitHub } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<>
-			<section className="sections bg-gray-400 rounded-md ">
-				<div className="container ">
-					<div className="footer-content  flex gap-5 px-5 ">
-						<div className="left-items  mb-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Perferendis nostrum officiis quae iure voluptatem mollitia autem
-							vero exercitationem aliquid eum. Enim quos debitis autem
-							repellendus, inventore beatae. Fugiat, consectetur assumenda?
+			<footer className="py-[2.2em] md:pl-[0.9em] md:pb-[13em]   rounded-sm footer">
+				<div className="container">
+					<div className="footer-content flex flex-col pl-[0.8em] md:flex-row md:justify-between gap-10">
+						<div className="footer-left">
+							<h2 className="footer-left-text">Адрес</h2>
+							<p className="footer-left-text">Таджикистан | Tajikistan.</p>
+							<p className="footer-left-text">Душанбе | Dushanbe.</p>
 						</div>
-						<div className="center-items mb-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-							similique officiis cumque autem aliquid iure sed aspernatur? Nulla
-							nihil veniam, a harum vel, aliquam nostrum explicabo illum
-							necessitatibus, maiores ea.
+						<div className="footer-center">
+							<h2 className="footer-center-text">ССЫЛКИ</h2>
+							<p className="footer-center-text">
+								Обо мне |{" "}
+								<Link to="/Experience" className="footer-center-link">
+									Открыть.
+								</Link>
+							</p>
+							<span className="footer-center-text">
+								СV | <Link className="footer-center-link">Скачать.</Link>
+							</span>
 						</div>
-						<div className="right-items">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
-							eveniet iure voluptatem, vitae magni modi mollitia ad vero
-							aspernatur alias rem eligendi ab nesciunt architecto
-							necessitatibus tempora possimus amet quam!
+						<div className="footer-right">
+							<h2 className="footer-right-text">Социальные сети</h2>
+							<p className="footer-right-text">
+								Instagram |{" "}
+								<Link className="footer-center-link" target="_blank">
+									{" "}
+									<Instagram />{" "}
+								</Link>
+							</p>
+							<p className="footer-right-text">
+								GitHub |{" "}
+								<Link
+									to="https://github.com/Komil-Muminov"
+									target="_blank"
+									className="footer-center-link"
+								>
+									<GitHub />
+								</Link>
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
+			</footer>
 		</>
 	);
 };
