@@ -11,7 +11,9 @@ const PersonPage = () => {
 						<img src={Person} alt="" className="avatar-wrapper" />
 					</div>
 					<div className="text-wrapper flex justify-center items-center flex-col flex-wrap">
-						<h1 className="sections-title person-title ">I'M KOMIL MUMINOV.</h1>
+						<h1 className="sections-title person-title text-center text-2xl first-letter: md:text-6xl">
+							I'M KOMIL MUMINOV.
+						</h1>
 						<p className="sections-desc person-desc px-4 ">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
 							quisquam vel eius facere in, tempore adipisci expedita nihil.
