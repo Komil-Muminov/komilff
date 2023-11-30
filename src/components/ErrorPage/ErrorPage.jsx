@@ -5,7 +5,7 @@ const ErrorPage = () => {
 		<>
 			<section className="Error-section">
 				<div className="container flex flex-col justify-center items-center">
-					<img src={ErrorRobot} alt="Robot" />
+					<img src={ErrorRobot} alt="Robot" className=" w-1/4 h-1/4" />
 					<div className="text-wrapper flex flex-col justify-center items-center mb-[1.2em]">
 						<h2 className="ErrorPage-title text-3xl text-center md:text-7xl text-red-400">
 							Страница не найдена |

@@ -1,3 +1,27 @@
-.header-section {
-	padding-top: 31px;
+/* Links */
+.nav-link {
+	text-transform: uppercase;
+	transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+	color: rgb(177, 177, 177);
+	border-bottom: 1px solid #fff;
+}
+
+.nav-link:active {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.nav-link:focus {
+	border-bottom: 1px solid rgb(255, 190, 190);
+}
+/* Burger-menu */
+.isMobile-icon {
+	transition: color 0.2s ease;
+}
+
+.isMobile-icon:active {
+	color: rgb(255, 199, 199);
+	outline: 2px solid rgb(255, 199, 199);
 }
