@@ -53,10 +53,7 @@
 
 /* STACK - ICON */
 
-.stack-icon {
-	cursor: pointer;
-	transition: background 0.2s ease-in-out;
-}
-.stack-icon:hover {
-	background: rgba(0, 30, 255, 0.267);
+
+.person-skills:hover {
+	transform: translateY(10px);
 }

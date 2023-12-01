@@ -41,13 +41,25 @@ const PersonPage = () => {
 
 					<div className="experience-img flex flex-wrap justify-center items-center gap-4 md:gap-[60px] ">
 						<img
-							className=" object-cover h-14 w-14"
+							className=" person-skills object-cover h-14 w-14"
 							src={HtmlIcon}
 							alt="html"
 						/>
-						<img className=" object-cover h-14 w-14" src={Css} alt="css" />
-						<img className=" object-cover h-14 w-14" src={JS} alt="js" />
-						<img className=" object-cover h-14 w-14" src={react} alt="react" />
+						<img
+							className="person-skills  object-cover h-14 w-14"
+							src={Css}
+							alt="css"
+						/>
+						<img
+							className="person-skills  object-cover h-14 w-14"
+							src={JS}
+							alt="js"
+						/>
+						<img
+							className="person-skills  object-cover h-14 w-14"
+							src={react}
+							alt="react"
+						/>
 					</div>
 				</div>
 			</section>
