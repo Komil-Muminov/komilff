@@ -26,6 +26,7 @@ const PersonPage = () => {
 						<p className="sections-desc person-desc px-4 ">
 							Саламалейкум, Добро пожаловать на мой сайт!
 						</p>
+						<small className="text-red-300"> 01.04 ∞</small>
 					</div>
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
 						<a href="#" className="btn person-btn text-center">

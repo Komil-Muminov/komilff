@@ -29,6 +29,10 @@ const NavLinks = () => {
 						<Link className="nav-link pc-links" to="/Contacts">
 							CONTACTS
 						</Link>
+
+						<Link className="nav-link pc-links" to="/sdasad">
+							NotFoundPage
+						</Link>
 					</nav>
 				</div>
 			</header>

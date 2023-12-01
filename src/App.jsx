@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { inject } from "@vercel/analytics";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,6 +12,7 @@ import Experience from "./components/Experience/Experience";
 import Contacts from "./components/Contacts/Contacts";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
+import Pastlives from "./components/PastLive/Pastlives";
 function App() {
 	useEffect(() => {
 		AOS.init({
@@ -18,6 +20,9 @@ function App() {
 		});
 		AOS.refresh();
 	}, []);
+
+	inject();
+
 	return (
 		<>
 			{/* <Editing /> */}
@@ -57,6 +62,15 @@ function App() {
 					element={
 						<div data-aos="fade-right">
 							<Experience />
+						</div>
+					}
+				/>
+
+				<Route
+					path="/Pastlives"
+					element={
+						<div data-aos="fade-right">
+							<Pastlives />
 						</div>
 					}
 				/>
