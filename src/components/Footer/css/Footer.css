@@ -1,3 +1,38 @@
-.footer{
+.footer {
 	background: #303030;
+}
+
+.footer-left-text {
+	max-width: 50em;
+}
+
+.footer-center-link:hover {
+	color: #b3b3b3;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer-center-link:focus {
+	color: #986888;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer-center-link:hover:active {
+	color: #5e81ff;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer-right-link {
+	transition: color 0.3s ease-in-out;
+}
+
+.footer-right-link:hover {
+	color: #87a1ff;
+}
+
+.footer-right-link:focus {
+	color: #986888;
+}
+
+.footer-right-link:active {
+	color: #986888;
 }

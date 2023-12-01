@@ -9,6 +9,11 @@
 	color: rgb(200, 200, 200);
 }
 
+.nav-link:focus {
+	color: #986888;
+	transition: color 0.3s ease-in-out;
+}
+
 .nav-link::after {
 	content: "";
 	position: absolute;

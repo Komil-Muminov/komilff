@@ -1,6 +1,7 @@
 import "./css/Footer.css";
 import { Instagram, Email, GitHub } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
 	return (
 		<>
@@ -14,29 +15,33 @@ const Footer = () => {
 						</div>
 						<div className="footer-center flex flex-col">
 							<h2 className="footer-center-text">ССЫЛКИ</h2>
-							Обо мне |{" "}
+
 							<Link to="/Experience" className="footer-center-link">
-								Открыть.
+								Обо мне | Открыть
 							</Link>
 							<span className="footer-center-text flex flex-col">
-								СV | <Link className="footer-center-link">Скачать.</Link>
+								<Link className="footer-center-link">СV | Скачать.</Link>
 							</span>
 						</div>
 						<div className="footer-right">
 							<h2 className="footer-right-text">Социальные сети</h2>
-							<p className="footer-right-text">
-								Instagram |{" "}
-								<Link className="footer-center-link" target="_blank">
-									{" "}
-									<Instagram />{" "}
-								</Link>
-							</p>
+							Instagram |{" "}
+							<Link
+								to="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="footer-right-link"
+							>
+								{" "}
+								<Instagram />{" "}
+							</Link>
 							<p className="footer-right-text">
 								GitHub |{" "}
 								<Link
 									to="https://github.com/Komil-Muminov"
 									target="_blank"
-									className="footer-center-link"
+									rel="noopener noreferrer"
+									className="footer-right-link"
 								>
 									<GitHub />
 								</Link>
