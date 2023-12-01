@@ -1,0 +1,12 @@
+.contacts-text {
+	color: #ffffff;
+}
+
+.contacts-text:hover {
+	color: rgb(199, 199, 199);
+	transition: color 0.3s ease-in-out;
+}
+
+.contacts-text:hover:active {
+	color: #2196f3;
+}

@@ -24,10 +24,7 @@ const PersonPage = () => {
 							I'M KOMIL MUMINOV.
 						</h1>
 						<p className="sections-desc person-desc px-4 ">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-							quisquam vel eius facere in, tempore adipisci expedita nihil.
-							Similique, cumque. Delectus corrupti ut quas at impedit rem
-							quibusdam, fugit quidem!
+							Саламалейкум, Добро пожаловать на мой сайт!
 						</p>
 					</div>
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
