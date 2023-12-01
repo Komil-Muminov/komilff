@@ -35,6 +35,7 @@ const PersonPage = () => {
 
 					<div className="experience-wrapper flex gap-4 md:gap-[60px] justify-center items-center">
 						<svg
+							className="stack-icon"
 							width="38"
 							height="42"
 							viewBox="0 0 38 42"
@@ -60,6 +61,7 @@ const PersonPage = () => {
 							</defs>
 						</svg>
 						<svg
+							className="stack-icon"
 							width="42"
 							height="42"
 							viewBox="0 0 42 42"
@@ -85,6 +87,7 @@ const PersonPage = () => {
 							</defs>
 						</svg>
 						<svg
+							className="stack-icon"
 							width="38"
 							height="42"
 							viewBox="0 0 38 42"
@@ -110,6 +113,7 @@ const PersonPage = () => {
 							</defs>
 						</svg>
 						<svg
+							className="stack-icon"
 							width="48"
 							height="42"
 							viewBox="0 0 48 42"
