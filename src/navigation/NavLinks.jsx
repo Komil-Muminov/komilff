@@ -60,30 +60,6 @@ const NavLinks = () => {
 					</div>
 				</header>
 			)}
-
-			{/* <div className="flex justify-c items-center pr-3 md:hidden  pb-[3.4em]">
-				<span onClick={() => setIsMobile(!isMobile)} className="isMobile">
-					<Menu />
-				</span>
-				{isMobile && (
-					<div data-aos="fade-left" className="container pb-[3.4em]">
-						<div className="flex flex-col md:flex-row">
-							<Link
-								to="/Home"
-								className="flex flex-col items-center justify-center min-w-max"
-							>
-								<img src={Logo} alt="Logo" className="h-[5em] w-[5em]" />
-							</Link>
-							<nav className="links flex flex-wrap flex-col gap-[1em] justify-center items-center">
-								<Link to="/Home">HOME</Link>
-								<Link to="/PersonPage">PERSON PAGE</Link>
-								<Link to="/Experience">EXPERIENCE</Link>
-								<Link to="/Contacts">CONTACTS</Link>
-							</nav>
-						</div>
-					</div>
-				)}
-			</div> */}
 		</>
 	);
 };
