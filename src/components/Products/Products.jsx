@@ -1,60 +1,100 @@
+import React from "react";
 import { useState } from "react";
-import { useForm } from "react-hook-form";
 import { TextField } from "@mui/material";
+import "./css/isEditing.css";
 import { v4 as uuidv4 } from "uuid";
-
 const Products = () => {
-	const {
-		register,
-		handleSubmit,
-		reset,
-		watch,
-		formState: { errors },
-	} = useForm({ mode: "onBlur" });
+	const [userInput, setUserInput] = useState("");
+	const [userInputObj, setUserInputObj] = useState([]);
 
-	const [product, setProduct] = useState([]);
-	const onSubmit = (data) => {
-		setProduct((prev) => [
+	const hanldeSubmit = (e) => {
+		e.preventDefault();
+		setUserInputObj((prev) => [
 			...prev,
-			{ id: uuidv4(), task: data.text, isEditing: false },
+			{ id: uuidv4(), task: userInput, isEditing: false },
 		]);
-		console.log(product);
-		reset();
+		setUserInput("");
+		console.log(userInputObj);
 	};
 
-	const handleDelete = (id) => {
-		setProduct((prev) => prev.filter((item) => item.id !== id));
+	const handleIsEditing = (itemId) => {
+		setUserInputObj((prev) =>
+			prev.map((item) =>
+				item.id === itemId ? { ...item, isEditing: !item.isEditing } : item,
+			),
+		);
+	};
+
+	const handleisEditingSave = (itemId, userInput) => {
+		setUserInputObj((prev) =>
+			prev.map((item) =>
+				item.id === itemId
+					? { ...item, task: userInput, isEditing: !item.isEditing }
+					: item,
+			),
+		);
+		// Ваш код здесь.
 	};
 
 	return (
 		<>
 			<section className="sections">
-				<div className="container todo-container">
-					<div className="task-content flex flex-col justify-center items-center ">
-						<h2 className="sections-title todo-title mb-4 text-center">
-							СПИСОК ЗАДАЧ:
-						</h2>
+				<div className="container products-container">
+					<h2 className="sections-title">Продукты</h2>
+					<div className="product-content">
 						<form
-							onSubmit={handleSubmit(onSubmit)}
-							className="todo-form flex gap-4 mb-5  "
+							action=""
+							onSubmit={hanldeSubmit}
+							className="product-form flex gap-4"
 						>
 							<TextField
-								className="bg-white rounded-lg h-[3.4em]"
-								id="outlined-search"
 								type="search"
-								{...register("text", {
-									minLength: 2,
-								})}
+								value={userInput}
+								onChange={(e) => setUserInput(e.target.value)}
+								className="product-input bg-slate-50 rounded-lg h-15"
 							/>
-							<button className="btn form-submit">Отправить</button>
+							<button className="btn product-btn">Отправить</button>
 						</form>
 
-						<div className="task-item mb-5">
-							<h3>Задачи:</h3>
-							{product.map((item) => (
-								<li className="item">{item.task}</li>
-							))}
-						</div>
+						{userInputObj?.length > 0 ? (
+							<>
+								{userInputObj?.map((item) => (
+									<ul className="product-list">
+										<li className="product-item">
+											Наименование - {item.task}{" "}
+											{item.isEditing ? (
+												<>
+													<div className="isEditing-content">
+														<TextField
+															type="search"
+															className="product-input bg-slate-50 rounded-lg h-15 text-red-500"
+															value={userInput}
+															onChange={(e) => setUserInput(e.target.value)}
+														/>
+														<button
+															className="text-black"
+															onClick={() =>
+																handleisEditingSave(item.id, userInput)
+															}
+														>
+															Сохранить
+														</button>
+													</div>
+												</>
+											) : (
+												<>
+													<button onClick={() => handleIsEditing(item.id)}>
+														Редактировать
+													</button>
+												</>
+											)}
+										</li>
+									</ul>
+								))}
+							</>
+						) : (
+							<></>
+						)}
 					</div>
 				</div>
 			</section>

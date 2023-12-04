@@ -1,0 +1,23 @@
+.isEditing-content {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	color: #fff;
+	background: #fff;
+	padding: 106px 42px 32px 45px;
+	position: relative;
+	border-radius: 15px;
+}
+
+.isEditing-content::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	background-image: url("../img/RrPng.png");
+	background-repeat: no-repeat;
+	width: 66px;
+	height: 66px;
+	background-size: cover;
+}
