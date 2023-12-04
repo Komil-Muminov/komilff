@@ -27,7 +27,7 @@ const Footer = () => {
 							<h2 className="footer-right-text">Социальные сети</h2>
 							Instagram |{" "}
 							<Link
-								to="#"
+								to="https://www.instagram.com/komilff"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="footer-right-link"
@@ -53,5 +53,4 @@ const Footer = () => {
 		</>
 	);
 };
-
 export default Footer;
