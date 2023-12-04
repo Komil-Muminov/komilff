@@ -22,6 +22,22 @@
 }
 
 /* BTN */
-.isEditingSave-btn {
-    
+.isEditing-btn {
+	border: none;
+	padding: 1.1em;
+	border-radius: 3px;
+	background: #3172b9;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.isEditing-btn:hover {
+	background-color: #71a7e2;
+}
+
+.isEditing-btn:focus {
+	background-color: #08498f;
+}
+
+.isEditing-btn:hover:active {
+	background-color: #032141;
 }

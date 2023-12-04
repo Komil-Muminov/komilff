@@ -41,7 +41,7 @@ const Products = () => {
 			<section className="sections">
 				<div className="container products-container">
 					<h2 className="sections-title pl-4 mb-4">Продукты</h2>
-					<div className="product-content flex flex-col px-4">
+					<div className="product-content flex flex-col items-center justify-center px-4">
 						<form
 							action=""
 							onSubmit={hanldeSubmit}
@@ -61,18 +61,22 @@ const Products = () => {
 								{userInputObj?.map((item) => (
 									<ul className="product-list">
 										<li className="product-item mb-4">
-											Наименование - {item.task}{" "}
+											<div className="poducts-item-text">
+												<p className="w-[277px]  mb-4">
+													Наименование - {item.task}
+												</p>
+											</div>
 											{item.isEditing ? (
 												<>
-													<div className="isEditing-content">
+													<div className="isEditing-content flex gap-3">
 														<TextField
 															type="search"
-															className="product-input bg-slate-50 rounded-lg h-15 text-red-500"
+															className="product-input bg-slate-50 rounded-lg h-15"
 															value={userInput}
 															onChange={(e) => setUserInput(e.target.value)}
 														/>
 														<button
-															className="btn isEditingSave-btn text-black"
+															className="btn isEditing-btn text-black"
 															onClick={() =>
 																handleisEditingSave(item.id, userInput)
 															}
