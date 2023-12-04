@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { TextField } from "@mui/material";
 import { v4 as uuidv4 } from "uuid";
 
-const ToDo = () => {
+const Products = () => {
 	const {
 		register,
 		handleSubmit,
@@ -62,4 +62,4 @@ const ToDo = () => {
 	);
 };
 
-export default ToDo;
+export default Products;

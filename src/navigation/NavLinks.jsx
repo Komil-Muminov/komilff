@@ -30,8 +30,8 @@ const NavLinks = () => {
 							CONTACTS
 						</Link>
 
-						<Link className="nav-link pc-links" to="/ToDo">
-							СПИСОК ЗАДАЧ
+						<Link className="nav-link pc-links" to="/Products">
+							Товары
 						</Link>
 						{/* NotFounPage commented */}
 						{/* <Link className="nav-link pc-links" to="/sdasad">
@@ -64,6 +64,9 @@ const NavLinks = () => {
 							</Link>
 							<Link className="nav-link mobile-links" to="/Contacts">
 								CONTACTS
+							</Link>
+							<Link className="nav-link pc-links" to="/Products">
+								Товары
 							</Link>
 						</nav>
 					</div>

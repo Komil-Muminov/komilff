@@ -11,7 +11,7 @@ import PersonPage from "./components/Person/PersonPage";
 import Experience from "./components/Experience/Experience";
 import Contacts from "./components/Contacts/Contacts";
 import Pastlives from "./components/PastLive/Pastlives";
-import ToDo from "./components/Todo/ToDo";
+import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 function App() {
@@ -77,10 +77,10 @@ function App() {
 				/>
 
 				<Route
-					path="/ToDo"
+					path="/Products"
 					element={
 						<div data-aos="fade-right">
-							<ToDo />
+							<Products />
 						</div>
 					}
 				/>
