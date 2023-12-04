@@ -72,7 +72,7 @@ const Products = () => {
 															onChange={(e) => setUserInput(e.target.value)}
 														/>
 														<button
-															className="text-black"
+															className="btn isEditingSave-btn text-black"
 															onClick={() =>
 																handleisEditingSave(item.id, userInput)
 															}
@@ -83,7 +83,10 @@ const Products = () => {
 												</>
 											) : (
 												<>
-													<button onClick={() => handleIsEditing(item.id)}>
+													<button
+														className="btn isEditing-btn"
+														onClick={() => handleIsEditing(item.id)}
+													>
 														Редактировать
 													</button>
 												</>

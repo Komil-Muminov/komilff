@@ -14,10 +14,14 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-
 	background-image: url("../img/RrPng.png");
 	background-repeat: no-repeat;
 	width: 66px;
 	height: 66px;
 	background-size: cover;
+}
+
+/* BTN */
+.isEditingSave-btn {
+    
 }
