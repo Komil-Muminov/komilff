@@ -30,9 +30,14 @@ const NavLinks = () => {
 							CONTACTS
 						</Link>
 
-						<Link className="nav-link pc-links" to="/sdasad">
-							NotFoundPage
+						<Link className="nav-link pc-links" to="/ToDo">
+							СПИСОК ЗАДАЧ
 						</Link>
+						{/* NotFounPage commented */}
+						{/* <Link className="nav-link pc-links" to="/sdasad">
+							NotFoundPage
+						</Link> */}
+						{/* NotFounPage commented */}
 					</nav>
 				</div>
 			</header>
