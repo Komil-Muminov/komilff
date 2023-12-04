@@ -10,9 +10,9 @@ import Home from "./components/Home/Home";
 import PersonPage from "./components/Person/PersonPage";
 import Experience from "./components/Experience/Experience";
 import Contacts from "./components/Contacts/Contacts";
-import ErrorPage from "./components/ErrorPage/ErrorPage";
-import Footer from "./components/Footer/Footer";
 import Pastlives from "./components/PastLive/Pastlives";
+import Footer from "./components/Footer/Footer";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 function App() {
 	useEffect(() => {
 		AOS.init({
