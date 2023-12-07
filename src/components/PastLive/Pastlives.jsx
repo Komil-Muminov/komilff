@@ -14,7 +14,7 @@ const Pastlives = () => {
 							critical juncture for our tale, and it moved on to the next phase
 							of its existence, leaving the past behind. The new chapter brings
 							fresh opportunities, but memories of the past will always remain
-							in our hearts. We refer to this story as “Lalila.”
+							in their hearts.And the story is called as “Lalila.”
 						</p>
 					</div>
 				</div>
