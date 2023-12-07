@@ -20,6 +20,10 @@
 	outline-offset: 3px;
 }
 
+.nav-link:active:not(:focus-visible) {
+	color: #854871;
+}
+
 .nav-link::after {
 	content: "";
 	position: absolute;
