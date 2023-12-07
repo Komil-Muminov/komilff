@@ -28,11 +28,18 @@ const PersonPage = () => {
 						<small className="text-red-300"> 01.04 ∞</small>
 					</div>
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
-						<a href="#" className="btn person-btn text-center">
-							GET IN TOUCH
+						<a
+							href="mailto:kmuminov0104@gmail.com"
+							className="btn person-btn text-center"
+						>
+							НАПИСАТЬ НА ПОЧТУ
 						</a>
-						<a href="#" className="btn person-btn text-center">
-							GET IN TOUCH
+						<a
+							href="https://www.instagram.com/komilff"
+							target="_blank"
+							className="btn person-btn text-center"
+						>
+							НАПИСАТЬ НА ИНСТАГРАМ
 						</a>
 					</div>
 
