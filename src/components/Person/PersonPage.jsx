@@ -32,14 +32,14 @@ const PersonPage = () => {
 							href="mailto:kmuminov0104@gmail.com"
 							className="btn person-btn text-center"
 						>
-							НАПИСАТЬ НА ПОЧТУ
+							Написать на Почту
 						</a>
 						<a
 							href="https://www.instagram.com/komilff"
 							target="_blank"
 							className="btn person-btn text-center"
 						>
-							НАПИСАТЬ НА ИНСТАГРАМ
+							Написать на Instagram
 						</a>
 					</div>
 
