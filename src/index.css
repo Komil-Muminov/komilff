@@ -19,10 +19,9 @@ a {
 	transition: color 0.3s ease-in-out;
 }
 
-
-
 .container {
-	max-width: 1440px;
+	max-width: 1920px;
+	/* padding: 0 75px; */
 	margin: 0 auto;
 }
 
@@ -32,6 +31,7 @@ a {
 }
 
 .sections-title {
+	font-size: 1.4rem;
 	color: #fff;
 	font-weight: 800;
 	max-width: 656px;

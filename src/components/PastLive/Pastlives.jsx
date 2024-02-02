@@ -1,12 +1,10 @@
-import React from "react";
-
 const Pastlives = () => {
 	return (
 		<>
 			<section className="sections experience-section">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1em]">Past Live</h2>
-					<div className="text-wrapper flex flex-col justify-center items-center px-[1.1em]">
+					<div className="text__content flex justify-center items-center ">
 						<p className="sections-desc mb-[1em]">
 							Once there was a remarkable story about an unbreakable bond.
 							However, at some point, this bond, which seemed eternal, reached

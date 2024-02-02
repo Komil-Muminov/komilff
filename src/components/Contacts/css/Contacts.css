@@ -15,11 +15,11 @@
 }
 
 .contacts-text:focus {
-	background-color: #666666;
+	background-color: #595959;
 	outline: none;
 	color: rgb(255, 255, 255);
 }
 
 .contacts-text:hover:active {
-	color: #d4ecff;
+	background-color: #363636;
 }
