@@ -1,5 +1,5 @@
 import "./css/Footer.css";
-import { Instagram, Email, GitHub } from "@mui/icons-material";
+import { Instagram, GitHub } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
