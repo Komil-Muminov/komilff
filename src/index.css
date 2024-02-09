@@ -21,7 +21,7 @@ a {
 
 .container {
 	max-width: 1920px;
-	/* padding: 0 75px; */
+	padding: 0 75px;
 	margin: 0 auto;
 }
 
