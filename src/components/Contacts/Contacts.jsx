@@ -6,25 +6,25 @@ const Contacts = () => {
 			<section className="sections experience-section ">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1.5em]">Контакты</h2>
-					<div className="contacts__content flex gap-5 justify-center items-center  ">
+					<div className="contacts__content flex flex-wrap px-5 md:px-0 gap-5 justify-center items-center  ">
 						<Link
 							target="_blank"
 							to="https://docs.google.com/forms/d/1cM2UPm14NBZQb1yHDaP6KbOWIvEiE0gMrB5wAeww81M/edit"
-							className="max-w-[10em] contacts-text"
+							className="w-full md:max-w-[10em] contacts-text"
 						>
-							Гугл Формы
+							GoogleForms
 						</Link>
 						<Link
 							target="_blank"
 							to="mailto:kmuminov0104@gmail.com"
-							className="max-w-[10em] contacts-text"
+							className=" w-full md:max-w-[10em] contacts-text"
 						>
 							GMAIL
 						</Link>
 						<Link
 							target="_blank"
 							to="https://www.instagram.com/komilff/"
-							className="max-w-[10em] contacts-text"
+							className="w-full md:max-w-[10em] contacts-text"
 						>
 							INSTAGRAM
 						</Link>

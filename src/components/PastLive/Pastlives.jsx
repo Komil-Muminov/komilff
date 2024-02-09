@@ -4,7 +4,7 @@ const Pastlives = () => {
 			<section className="sections experience-section">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1em]">Past Live</h2>
-					<div className="text__content flex justify-center items-center ">
+					<div className="text__content flex justify-center items-center px-5 ">
 						<p className="sections-desc mb-[1em]">
 							Once there was a remarkable story about an unbreakable bond.
 							However, at some point, this bond, which seemed eternal, reached

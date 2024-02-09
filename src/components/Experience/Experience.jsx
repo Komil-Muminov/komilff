@@ -5,7 +5,7 @@ const Experience = () => {
 			<section className="sections experience-section ">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1em]">Обо мне</h2>
-					<div className="text-wrapper flex flex-col justify-center items-center px-[1.1em]">
+					<div className="text-wrapper flex flex-col justify-center items-center px-5">
 						<p className="sections-desc about-desc mb-[1em]">
 							Я Комил Муминов, я родился 1 апреля 1997 года. Мой путь
 							образования начался в средней школе № 88, где я учился с 2004 по
