@@ -6,7 +6,7 @@ const Contacts = () => {
 			<section className="sections experience-section ">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1.5em]">Контакты</h2>
-					<div className="contacts__content flex flex-wrap px-5 md:px-0 gap-5 justify-center items-center  ">
+					<div className="contacts__content flex flex-wrap  gap-5 justify-center items-center  ">
 						<Link
 							target="_blank"
 							to="https://docs.google.com/forms/d/1cM2UPm14NBZQb1yHDaP6KbOWIvEiE0gMrB5wAeww81M/edit"

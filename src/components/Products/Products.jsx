@@ -41,7 +41,7 @@ const Products = () => {
 			<section className="sections">
 				<div className="container products-container">
 					<h2 className="sections-title pl-4 mb-4">Продукты</h2>
-					<div className="product-content flex flex-col items-center justify-center px-4">
+					<div className="product-content flex flex-col items-center justify-center">
 						<form
 							action=""
 							onSubmit={hanldeSubmit}

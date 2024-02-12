@@ -44,13 +44,13 @@ const NavLinks = () => {
 
 			<span
 				onClick={() => setIsMobile(!isMobile)}
-				className="flex justify-end items-center px-[1.7em] pt-[1.6em] md:hidden"
+				className="flex justify-end items-centermd:hidden"
 			>
 				<Menu className="isMobile-icon" />
 			</span>
 
 			{isMobile && (
-				<header data-aos="fade-left" className="sections">
+				<header data-aos="fade-left" className="sections  pt-0 pb-0">
 					<div className="container isMobile-container">
 						<nav className="links flex flex-wrap flex-col gap-[1em] justify-center items-center">
 							<Link className="nav-link mobile-links" to="/Home">

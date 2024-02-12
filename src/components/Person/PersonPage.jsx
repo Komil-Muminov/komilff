@@ -22,7 +22,7 @@ const PersonPage = () => {
 						<h1 className="sections-title person-title text-center text-2xl first-letter: md:text-6xl">
 							I'M KOMIL MUMINOV.
 						</h1>
-						<p className="sections-desc person-desc px-4 ">
+						<p className="sections-desc person-desc">
 							Саламалейкум, Добро пожаловать на мой сайт!
 						</p>
 						<small className="text-red-300"> 01.04 ∞</small>
