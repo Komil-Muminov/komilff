@@ -57,3 +57,11 @@
 	transform: translateY(5px);
 	transition: transform 0.3s ease-in-out;
 }
+
+.experience__content {
+	background: red;
+}
+
+.person-skills {
+	width: calc((100% - 16px) / 2);
+}

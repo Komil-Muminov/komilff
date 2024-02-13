@@ -1,4 +1,5 @@
 import "./css/navigation.css";
+import "../media.css";
 import { Menu } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import Logo from "./img/logo.png";

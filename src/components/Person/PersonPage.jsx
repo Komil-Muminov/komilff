@@ -30,14 +30,15 @@ const PersonPage = () => {
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
 						<a
 							href="mailto:kmuminov0104@gmail.com"
-							className="btn person-btn text-center"
+							className="btn person-btn person__btn-email  text-center"
 						>
 							Написать на Почту
 						</a>
 						<a
+							rel="noreferrer"
 							href="https://www.instagram.com/komilff"
 							target="_blank"
-							className="btn person-btn text-center"
+							className="btn person-btn person__btn-inst text-center"
 						>
 							Написать на Instagram
 						</a>
@@ -48,22 +49,22 @@ const PersonPage = () => {
 
 					<div className="experience-img flex flex-wrap justify-center items-center gap-4 md:gap-[60px] ">
 						<img
-							className=" person-skills object-cover h-14 w-14"
+							className=" person-skills object-cover h-14 w-14 md:w-16 md:h-16"
 							src={HtmlIcon}
 							alt="html"
 						/>
 						<img
-							className="person-skills  object-cover h-14 w-14"
+							className="person-skills  object-cover h-14 w-14 md:w-16 md:h-16"
 							src={Css}
 							alt="css"
 						/>
 						<img
-							className="person-skills  object-cover h-14 w-14"
+							className="person-skills  object-cover h-14 w-14 md:w-16 md:h-16"
 							src={JS}
 							alt="js"
 						/>
 						<img
-							className="person-skills  object-cover h-14 w-14"
+							className="person-skills  object-cover h-14 w-14 md:w-16 md:h-16"
 							src={react}
 							alt="react"
 						/>
