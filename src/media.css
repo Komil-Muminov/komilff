@@ -38,6 +38,7 @@
 	}
 
 	.person-skills {
+		object-fit: contain;
 		width: calc((100% - 1rem) / 2);
 	}
 }
