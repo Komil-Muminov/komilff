@@ -21,6 +21,7 @@ const Contacts = () => {
 						>
 							GMAIL
 						</Link>
+
 						<Link
 							target="_blank"
 							to="https://www.instagram.com/komilff/"
