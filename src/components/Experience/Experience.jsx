@@ -1,12 +1,18 @@
 import "./css/Experience.css";
+import Slider from "../Slider/Slider";
+
 const Experience = () => {
 	return (
 		<>
 			<section className="sections experience-section ">
 				<div className="container">
 					<h2 className="sections-title text-center mb-[1em]">Обо мне</h2>
-					<div className="text-wrapper flex flex-col justify-center items-center ">
-						<p className="sections-desc about-desc mb-[1em]">
+
+					<div className="about__card">
+						<Slider />
+					</div>
+					<div className="text__content flex flex-col justify-center items-center ">
+						<p className="sections-desc about-desc text-red-500 mb-[1rem]">
 							Я Комил Муминов, я родился 1 апреля 1997 года. Мой путь
 							образования начался в средней школе № 88, где я учился с 2004 по
 							2015 год. После завершения школы принял решение продолжить
@@ -26,13 +32,10 @@ const Experience = () => {
 							профессиональному и личному росту, а также к применению
 							приобретенных знаний и навыков в реальной жизни.
 						</p>
-						<small className="text-red-100">
-							*Данный текст написан исскуственным интелектом
-						</small>
-						{/* <small>
-							<b>*Данный текст написан с помощью AI</b>
-						</small> */}
 					</div>
+					<small className="text-red-100">
+						*Данный текст написан исскуственным интелектом
+					</small>
 				</div>
 			</section>
 		</>

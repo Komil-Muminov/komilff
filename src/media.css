@@ -27,6 +27,11 @@
 }
 
 @media screen and (min-width: 50px) and (max-width: 566px) {
+	.sections {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 	.container {
 		padding: 0 10px;
 	}

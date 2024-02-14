@@ -9,6 +9,14 @@ const Contacts = () => {
 					<div className="contacts__content flex flex-wrap  gap-5 justify-center items-center  ">
 						<Link
 							target="_blank"
+							to="https://www.instagram.com/komilff/"
+							className="w-full md:max-w-[10em] contacts-text"
+						>
+							INSTAGRAM
+						</Link>
+
+						<Link
+							target="_blank"
 							to="https://docs.google.com/forms/d/1cM2UPm14NBZQb1yHDaP6KbOWIvEiE0gMrB5wAeww81M/edit"
 							className="w-full md:max-w-[10em] contacts-text"
 						>
@@ -20,14 +28,6 @@ const Contacts = () => {
 							className=" w-full md:max-w-[10em] contacts-text"
 						>
 							GMAIL
-						</Link>
-
-						<Link
-							target="_blank"
-							to="https://www.instagram.com/komilff/"
-							className="w-full md:max-w-[10em] contacts-text"
-						>
-							INSTAGRAM
 						</Link>
 					</div>
 				</div>

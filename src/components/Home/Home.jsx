@@ -5,12 +5,10 @@ import Pastlives from "../PastLive/Pastlives";
 const Home = () => {
 	return (
 		<>
-			<div className="container">
-				<PersonPage />
-				<Experience />
-				<Pastlives />
-				<Contacts />
-			</div>
+			<PersonPage />
+			<Experience />
+			<Pastlives />
+			<Contacts />
 		</>
 	);
 };
