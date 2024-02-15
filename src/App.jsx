@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 // -----------------------------------------------------------------
 import NavLinks from "./navigation/NavLinks";
 import Home from "./components/Home/Home";

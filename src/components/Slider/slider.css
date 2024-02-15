@@ -1,7 +1,6 @@
 .mySwiper {
 	display: flex;
 	width: 60%;
-	min-height: 320px;
 	border-radius: 30px;
 	background: rgb(213, 210, 210);
 	filter: blur(4px);
