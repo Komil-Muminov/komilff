@@ -6,13 +6,15 @@ const Pastlives = () => {
 					<h2 className="sections-title text-center mb-[1em]">Past Live</h2>
 					<div className="text__content flex justify-center items-center  ">
 						<p className="sections-desc mb-[1em]">
-							Once there was a remarkable story about an unbreakable bond.
-							However, at some point, this bond, which seemed eternal, reached
-							its end, ushering in a new chapter. This transition became a
-							critical juncture for our tale, and it moved on to the next phase
-							of its existence, leaving the past behind. The new chapter brings
-							fresh opportunities, but memories of the past will always remain
-							in their hearts.And the story is called as “Lalila.”
+							Once there was a&nbsp;remarkable story about an&nbsp;unbreakable
+							bond. However, at&nbsp;some point, this bond, which seemed
+							eternal, reached its end, ushering in&nbsp;a&nbsp;new chapter.
+							This transition became a critical juncture for our tale, and
+							it&nbsp;moved on&nbsp;to&nbsp;the next phase of&nbsp;its
+							existence, leaving the past behind. The new chapter brings fresh
+							opportunities, but memories of&nbsp;the past will always remain
+							in&nbsp;their hearts.And the story is&nbsp;called
+							as&nbsp;&laquo;Lalila.&raquo;
 						</p>
 					</div>
 				</div>

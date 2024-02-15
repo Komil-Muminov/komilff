@@ -20,19 +20,19 @@ const PersonPage = () => {
 					</div>
 					<div className="text-wrapper flex justify-center items-center flex-col flex-wrap rounded-md mb-[1.3em]">
 						<h1 className="sections-title person-title text-center text-2xl first-letter: md:text-6xl">
-							I'M KOMIL MUMINOV.
+							I&rsquo;M&nbsp;KOMIL&nbsp;MUMINOV.
 						</h1>
 						<p className="sections-desc person-desc">
-							Саламалейкум, Добро пожаловать на мой сайт!
+							Саламалейкум, Добро пожаловать на&nbsp;мой сайт!
 						</p>
-						<small className="text-red-300"> 01.04 ∞</small>
+						<small className="text-red-300"> 01.04 &infin;</small>
 					</div>
 					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
 						<a
 							href="mailto:kmuminov0104@gmail.com"
 							className="btn person-btn person__btn-email  text-center"
 						>
-							Написать на Почту
+							Написать на&nbsp;Почту
 						</a>
 						<a
 							rel="noreferrer"
@@ -40,7 +40,7 @@ const PersonPage = () => {
 							target="_blank"
 							className="btn person-btn person__btn-inst text-center"
 						>
-							Написать на Instagram
+							Написать на&nbsp;Instagram
 						</a>
 					</div>
 
