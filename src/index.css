@@ -215,7 +215,7 @@ button {
 	}
 
 	/* Footer */
-	.footer {
-		padding: 20px 100px 20px 100px;
+	.footer-content {
+		padding: 20px 70px;
 	}
 }
