@@ -121,20 +121,27 @@ button {
 	letter-spacing: 0.36px;
 }
 
-/* --------------------------------MEDIA-Запросы------------------------------------------------------------- */
-@media screen and (min-width: 1367px) and (max-width: 1920px) {
-	.container {
-		max-width: 1920px;
-		padding: 0 75px;
-		margin: 0 auto;
-	}
+/* --------------------------------Стилизация------------------------------------------------------------- */
+
+/* Footer */
+
+.container {
+	max-width: 1920px;
+	padding: 0 75px;
+	margin: 0 auto;
 }
 
-@media screen and (min-width: 993px) and (max-width: 1366px) {
-	.container {
-		padding: 0 50px;
-	}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 45px 45px 45px 45px;
+}
 
+/* --------------------------------MEDIA-Запросы------------------------------------------------------------- */
+
+@media screen and (min-width: 993px) and (max-width: 1366px) {
 	.sections {
 		padding-top: 35px;
 		padding-bottom: 35px;
@@ -150,6 +157,12 @@ button {
 		padding-top: 35px;
 		padding-bottom: 35px;
 	}
+
+	.footer-content {
+		flex-direction: row;
+		justify-content: space-between;
+		/* align-items: center; */
+	}
 }
 
 @media screen and (min-width: 567px) and (max-width: 767px) {
@@ -160,6 +173,13 @@ button {
 	.sections {
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+
+	/* Footer */
+
+	.footer-content {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
 
@@ -192,5 +212,10 @@ button {
 	/* Slider */
 	.slider__content {
 		max-width: 492px;
+	}
+
+	/* Footer */
+	.footer {
+		padding: 20px 100px 20px 100px;
 	}
 }

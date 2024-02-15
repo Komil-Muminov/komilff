@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<>
-			<footer className="py-[2.2em] md:pl-[0.9em] md:pb-[13em]   rounded-sm footer">
+			<footer className="footer">
 				<div className="container">
-					<div className="footer-content text-center flex flex-col  md:flex-row md:justify-between gap-10 ">
+					<div className="footer-content text-center flex flex-col  gap-10 ">
 						<div className="footer-left flex flex-col">
 							<h2 className="footer-left-text">Адрес</h2>
 							<p className="footer-left-text">Таджикистан | Tajikistan.</p>
