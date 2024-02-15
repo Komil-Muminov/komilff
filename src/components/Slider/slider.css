@@ -1,6 +1,7 @@
 .mySwiper {
 	display: flex;
-	width: 80%;
+	width: 60%;
+	min-height: 320px;
 	border-radius: 30px;
 	background: rgb(213, 210, 210);
 	filter: blur(4px);
@@ -36,7 +37,6 @@
 }
 
 .swiper-button-next {
-	/* position: absolute; */
 	color: orange;
 	background-image: url("./next-icon.svg");
 	background-position: right center;

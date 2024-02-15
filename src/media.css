@@ -12,17 +12,32 @@
 	.container {
 		padding: 0 50px;
 	}
+
+	.sections {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	.container {
 		padding: 0 30px;
 	}
+
+	.sections {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
 }
 
 @media screen and (min-width: 567px) and (max-width: 767px) {
 	.container {
 		padding: 0 25px;
+	}
+
+	.sections {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
 
@@ -45,5 +60,11 @@
 	.person-skills {
 		object-fit: contain;
 		width: calc((100% - 1rem) / 2);
+	}
+
+	/* Slider */
+
+	.slider__content {
+		max-width: 492px;
 	}
 }
