@@ -1,106 +1,110 @@
-// import React from "react";
 // import { useState } from "react";
-// import { TextField } from "@mui/material";
-// import "./css/isEditing.css";
 // import { v4 as uuidv4 } from "uuid";
 // const Products = () => {
 // 	const [userInput, setUserInput] = useState("");
-// 	const [userInputObj, setUserInputObj] = useState([]);
+// 	const [inputObj, setInputObj] = useState([]);
 
-// 	const hanldeSubmit = (e) => {
+// 	const handleSubmite = (e) => {
 // 		e.preventDefault();
-// 		setUserInputObj((prev) => [
+// 		// Ваш код здесь.
+
+// 		setInputObj((prev) => [
 // 			...prev,
-// 			{ id: uuidv4(), task: userInput, isEditing: false },
+// 			{ id: uuidv4(), todo: userInput.trim(), isEdit: false },
 // 		]);
 // 		setUserInput("");
-// 		console.log(userInputObj);
 // 	};
 
-// 	const handleIsEditing = (itemId) => {
-// 		setUserInputObj((prev) =>
-// 			prev.map((item) =>
-// 				item.id === itemId ? { ...item, isEditing: !item.isEditing } : item,
-// 			),
-// 		);
+// 	const handleEdit = (itemId) => {
+// 		if (inputObj?.length > 0 && inputObj !== null && inputObj !== undefined) {
+// 			setInputObj((prev) =>
+// 				prev.map((item) =>
+// 					item.id === itemId ? { ...item, isEdit: !item.isEdit } : "",
+// 				),
+// 			);
+// 		}
 // 	};
 
-// 	const handleisEditingSave = (itemId, userInput) => {
-// 		setUserInputObj((prev) =>
-// 			prev.map((item) =>
-// 				item.id === itemId
-// 					? { ...item, task: userInput, isEditing: !item.isEditing }
-// 					: item,
-// 			),
-// 		);
+// 	const handleIsEditingSave = (itemId, userInput) => {
 // 		// Ваш код здесь.
+// 		if (inputObj?.length > 0 && inputObj !== null && inputObj !== undefined) {
+// 			setInputObj((prev) =>
+// 				prev.map((item) =>
+// 					itemId === item.id
+// 						? { ...item, todo: userInput, isEdit: !item.isEdit }
+// 						: item,
+// 				),
+// 			);
+// 		}
 // 	};
-
 // 	return (
 // 		<>
 // 			<section className="sections">
-// 				<div className="container products-container">
-// 					<h2 className="sections-title pl-4 mb-4">Продукты</h2>
-// 					<div className="product-content flex flex-col items-center justify-center">
-// 						<form
-// 							action=""
-// 							onSubmit={hanldeSubmit}
-// 							className="product-form flex gap-4 mb-4"
-// 						>
-// 							<TextField
-// 								type="search"
+// 				<div className="container">
+// 					<div className="content">
+// 						<form action="#" className="flex gap-3">
+// 							<input
+// 								type="text"
 // 								value={userInput}
-// 								onChange={(e) => setUserInput(e.target.value)}
-// 								className="product-input bg-slate-50 rounded-lg h-15 "
+// 								className="userInput text-red-500"
+// 								onChange={(e) => setUserInput(e.target.value.trim())}
 // 							/>
-// 							<button className="btn product-btn">Отправить</button>
+// 							<button
+// 								className="submite__btn bg-red-400"
+// 								onClick={handleSubmite}
+// 							>
+// 								Отправить{" "}
+// 							</button>
 // 						</form>
 
-// 						{userInputObj?.length > 0 ? (
-// 							<>
-// 								{userInputObj?.map((item) => (
-// 									<ul className="product-list">
-// 										<li className="product-item mb-4">
-// 											<div className="poducts-item-text">
-// 												<p className="w-[277px]  mb-4">
-// 													Наименование - {item.task}
-// 												</p>
-// 											</div>
-// 											{item.isEditing ? (
-// 												<>
-// 													<div className="isEditing-content flex gap-3">
-// 														<TextField
-// 															type="search"
-// 															className="product-input bg-slate-50 rounded-lg h-15"
-// 															value={userInput}
-// 															onChange={(e) => setUserInput(e.target.value)}
-// 														/>
-// 														<button
-// 															className="btn isEditing-btn text-black"
-// 															onClick={() =>
-// 																handleisEditingSave(item.id, userInput)
-// 															}
-// 														>
-// 															Сохранить
-// 														</button>
-// 													</div>
-// 												</>
-// 											) : (
-// 												<>
-// 													<button
-// 														className="btn isEditing-btn"
-// 														onClick={() => handleIsEditing(item.id)}
-// 													>
-// 														Редактировать
-// 													</button>
-// 												</>
-// 											)}
+// 						{inputObj?.length > 0 &&
+// 						inputObj !== null &&
+// 						inputObj !== undefined ? (
+// 							<div className="form__items">
+// 								{inputObj?.map((item) => (
+// 									<ul className="list" key={item.id}>
+// 										<li className="item" key={item.id}>
+// 											<p className="item__title">{item.todo}</p>
+// 											<button
+// 												onClick={() =>
+// 													setInputObj((prev) =>
+// 														prev.filter((itemId) => itemId.id !== item.id),
+// 													)
+// 												}
+// 											>
+// 												Удалить
+// 											</button>
 // 										</li>
+
+// 										{item.isEdit ? (
+// 											<div className="editing__mode">
+// 												<input
+// 													onChange={(e) => setUserInput(e.target.value)}
+// 													type="text"
+// 													placeholder={item.todo}
+// 													className="text-black bg-red-600"
+// 												/>
+// 												<button
+// 													onClick={() =>
+// 														handleIsEditingSave(item.id, userInput)
+// 													}
+// 													className="save__btn"
+// 												>
+// 													Сохранить
+// 												</button>
+// 											</div>
+// 										) : (
+// 											<div className="enable__editing">
+// 												<button onClick={() => handleEdit(item.id)}>
+// 													Редактировать
+// 												</button>
+// 											</div>
+// 										)}
 // 									</ul>
 // 								))}
-// 							</>
+// 							</div>
 // 						) : (
-// 							<></>
+// 							<h2 className="form__empty">ПУСТО !!!</h2>
 // 						)}
 // 					</div>
 // 				</div>

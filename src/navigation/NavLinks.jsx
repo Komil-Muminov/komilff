@@ -33,11 +33,9 @@ const NavLinks = () => {
 						<Link className="nav-link pc-links" to="/Products">
 							Товары
 						</Link>
-						{/* NotFounPage commented */}
-						{/* <Link className="nav-link pc-links" to="/sdasad">
-							NotFoundPage
-						</Link> */}
-						{/* NotFounPage commented */}
+						<Link className="nav-link pc-links" to="/sdasad">
+							NOT
+						</Link>
 					</nav>
 				</div>
 			</header>

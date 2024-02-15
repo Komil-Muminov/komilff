@@ -9,10 +9,10 @@ import PersonPage from "./components/Person/PersonPage";
 import Experience from "./components/Experience/Experience";
 import Contacts from "./components/Contacts/Contacts";
 import Pastlives from "./components/PastLive/Pastlives";
-import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 // import Slider from "./components/Slider/Slider";
+// import Products from "./components/Products/Products";
 // -----------------------------------------------------------------
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
 	return (
 		<>
-			{/* <Slider /> */}
+			{/* <Products /> */}
 			<NavLinks />
 			<Routes>
 				<Route path="*" element={<ErrorPage />} />
@@ -70,14 +70,14 @@ function App() {
 						</div>
 					}
 				/>
-				<Route
+				{/* <Route
 					path="/Products"
 					element={
 						<div data-aos="fade-right">
 							<Products />
 						</div>
 					}
-				/>
+				/> */}
 			</Routes>
 			<Footer />
 		</>
