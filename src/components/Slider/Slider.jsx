@@ -11,7 +11,6 @@ const Slider = () => {
 		<>
 			<section className="sections">
 				<div className="container">
-					<h2 className="sections__title">Slider</h2>
 					<div className="slider__content">
 						<Swiper
 							navigation={true}

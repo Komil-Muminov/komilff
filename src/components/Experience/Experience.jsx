@@ -6,11 +6,8 @@ const Experience = () => {
 		<>
 			<section className="sections experience-section ">
 				<div className="container">
-					<h2 className="sections-title text-center mb-[1em]">Обо мне</h2>
-
-					<div className="about__card">
-						<Slider />
-					</div>
+					<h2 className="sections-title text-center">Обо мне</h2>
+					<Slider />
 					<div className="text__content flex flex-col justify-center items-center ">
 						<p className="sections-desc about-desc text-red-500 mb-[1rem]">
 							Я Комил Муминов, я родился 1 апреля 1997 года. Мой путь
@@ -33,9 +30,9 @@ const Experience = () => {
 							приобретенных знаний и навыков в реальной жизни.
 						</p>
 					</div>
-					<small className="text-red-100">
+					{/* <small className="text-red-100">
 						*Данный текст написан исскуственным интелектом
-					</small>
+					</small> */}
 				</div>
 			</section>
 		</>

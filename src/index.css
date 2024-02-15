@@ -86,7 +86,7 @@ button {
 	--sections--offset: 54px;
 	--text-white: #fff;
 	--text-black: #000;
-	--text-red: 000;
+	--text-red: rgba(255, 139, 139, 0.886);
 }
 
 /* -----------------------------Global Styles--------------------------------------- */
@@ -173,8 +173,13 @@ button {
 		padding: 0 10px;
 	}
 
-	/* PersonPage */
+	/* Slider */
+	.mySwiper {
+		max-width: 300px;
+		width: 100%;
+	}
 
+	/* PersonPage */
 	.person__btn-email {
 		order: 1;
 	}

@@ -1,16 +1,17 @@
 .mySwiper {
 	display: flex;
-	width: 60%;
+	max-width: 800px;
+	width: 100%;
 	border-radius: 30px;
-	background: rgb(213, 210, 210);
-	filter: blur(4px);
+	/* background-color: rgba(255, 255, 255, 0.956); */
+	filter: blur(3px);
 	transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
-	position: relative;
+	/* position: relative; */
 }
 
 .mySwiper:hover {
 	filter: none;
-	background: rgba(250, 245, 245, 0.886);
+	/* background: var(--text-red); */
 }
 
 .swiper-slide {
@@ -24,9 +25,10 @@
 
 .slider_img {
 	display: block;
-	max-width: 400px;
-	object-fit: cover;
+	max-width: 800px;
 	width: 100%;
+	max-height: 600px;
+	height: auto;
 	min-height: 400px;
 	object-fit: cover;
 }
@@ -41,8 +43,9 @@
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 50px;
-	height: 50px;
+	max-width: 50px;
+	width: 100%;
+	min-height: 50px;
 	right: 10%;
 	top: 50%;
 }
@@ -56,8 +59,9 @@
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 50px;
-	height: 50px;
+	max-width: 50px;
+	width: 100%;
+	min-height: 50px;
 	right: 10%;
 	top: 50%;
 	left: 10%;
