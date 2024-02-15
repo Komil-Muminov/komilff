@@ -61,7 +61,3 @@
 .experience__content {
 	background: red;
 }
-
-.person-skills {
-	width: calc((100% - 16px) / 2);
-}
