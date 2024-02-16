@@ -8,7 +8,7 @@ const Experience = () => {
 				<div className="container">
 					<h2 className="sections-title text-center">Обо мне</h2>
 					<Slider />
-					<div className="text__content flex flex-wrap gap-4 justify-center items-center ">
+					<div className="text__content flex flex-col flex-wrap md:flex-nowrap gap-4 justify-center items-center ">
 						<div className="experience__card flex flex-col">
 							<h3 className="card__title text-black text-center mb-3">
 								Образование и университет:
