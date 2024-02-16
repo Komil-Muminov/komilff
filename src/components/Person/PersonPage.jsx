@@ -12,11 +12,11 @@ const PersonPage = () => {
 					{/* PERSON */}
 
 					<div className="img-wrapper flex justify-center items-center ">
-						<img
+						{/* <img
 							src={KM}
 							alt="km"
 							className="object-cover h-[19em] w-[19em] avatar-wrapper"
-						/>
+						/> */}
 					</div>
 					<div className="text-wrapper flex justify-center items-center flex-col flex-wrap rounded-md mb-[1.3em]">
 						<h1 className="sections-title person-title text-center text-2xl first-letter: md:text-6xl">

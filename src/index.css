@@ -108,7 +108,8 @@ button {
 	font-size: 1.4rem;
 	color: var(--text-white);
 	font-weight: 800;
-	max-width: 656px;
+	text-align: center;
+	/* max-width: 656px; */
 }
 
 .sections-desc {
@@ -175,7 +176,6 @@ button {
 	.footer-content {
 		flex-direction: row;
 		justify-content: space-between;
-		/* align-items: center; */
 	}
 }
 
@@ -190,7 +190,6 @@ button {
 	}
 
 	/* Footer */
-
 	.footer-content {
 		flex-direction: row;
 		justify-content: space-between;
@@ -198,6 +197,7 @@ button {
 }
 
 @media screen and (min-width: 50px) and (max-width: 566px) {
+	/* Global  */
 	.sections {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -220,7 +220,6 @@ button {
 
 	.person-skills {
 		object-fit: contain;
-		/* width: calc((100% - 1rem) / 2); */
 	}
 
 	/* Slider */

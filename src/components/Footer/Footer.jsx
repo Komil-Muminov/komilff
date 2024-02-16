@@ -25,18 +25,17 @@ const Footer = () => {
 						</div>
 						<div className="footer-right">
 							<h2 className="footer-right-text">Социальные сети</h2>
-							Instagram |{" "}
-							<Link
-								to="https://www.instagram.com/komilff"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="footer-right-link"
-							>
-								{" "}
-								<Instagram />{" "}
-							</Link>
-							<p className="footer-right-text">
-								GitHub |{" "}
+							<div className="social__icons">
+								<Link
+									to="https://www.instagram.com/komilff"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="footer-right-link"
+								>
+									{" "}
+									<Instagram />{" "}
+								</Link>
+
 								<Link
 									to="https://github.com/Komil-Muminov"
 									target="_blank"
@@ -45,7 +44,7 @@ const Footer = () => {
 								>
 									<GitHub />
 								</Link>
-							</p>
+							</div>
 						</div>
 					</div>
 				</div>
