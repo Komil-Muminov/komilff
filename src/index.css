@@ -149,9 +149,10 @@ button {
 	.text__content {
 		flex-direction: column;
 	}
-	.experience__card {
-		
-	}
+	/* .experience__card {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	} */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1366px) {
