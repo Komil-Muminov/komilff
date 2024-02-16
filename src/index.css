@@ -141,6 +141,19 @@ button {
 
 /* --------------------------------MEDIA-Запросы------------------------------------------------------------- */
 
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+	.container {
+		padding: 0 75px;
+	}
+
+	.text__content {
+		flex-direction: column;
+	}
+	.experience__card {
+		
+	}
+}
+
 @media screen and (min-width: 993px) and (max-width: 1366px) {
 	.sections {
 		padding-top: 35px;
@@ -178,9 +191,8 @@ button {
 	/* Footer */
 
 	.footer-content {
-		flex-direction: column;
-		justify-content: center;
-		padding: 20px 40px;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
 
@@ -217,7 +229,6 @@ button {
 
 	/* Footer */
 	.footer-content {
-		justify-content: center;
-		padding: 20px 30px;
+		padding: 20px 70px;
 	}
 }

@@ -14,12 +14,17 @@
 	color: rgb(255, 255, 255);
 }
 
-.contacts-text:focus {
+.contacts-text:focus:not(:focus-visible) {
 	background-color: #595959;
 	outline: none;
 	color: rgb(255, 255, 255);
 }
 
-.contacts-text:hover:active {
+.contacts-text:focus-visible {
+	outline: 1px solid rgb(255, 168, 168);
+	background-color: #666666;
+}
+
+.contacts-text:active:not(:focus-visible) {
 	background-color: #363636;
 }
