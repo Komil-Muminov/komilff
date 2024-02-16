@@ -178,8 +178,9 @@ button {
 	/* Footer */
 
 	.footer-content {
-		flex-direction: row;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 40px;
 	}
 }
 
@@ -216,6 +217,7 @@ button {
 
 	/* Footer */
 	.footer-content {
-		padding: 20px 70px;
+		justify-content: center;
+		padding: 20px 30px;
 	}
 }
