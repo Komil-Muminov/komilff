@@ -17,8 +17,12 @@
 
 .experience__card {
 	display: flex;
+	flex-wrap: wrap;
 	background: #fbf8f4;
 	padding: 30px 20px;
 	border-radius: 20px;
 	min-height: 300px;
+	height: 100%;
+	max-width: 800px;
+	width: 100%;
 }

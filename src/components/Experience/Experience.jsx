@@ -16,8 +16,9 @@ const Experience = () => {
 							>
 								Образование и университет:
 							</h3>
+							<img src="" alt="" />
 							<p
-								aria-label="Обо мне:"
+								aria-label="Образование и университет:"
 								className="w-full about__desc text-black max-w-3xl select-none "
 							>
 								Я&nbsp;Комил Муминов, родившийся 1&nbsp;апреля 1997&nbsp;года,
@@ -38,10 +39,7 @@ const Experience = () => {
 							<h3 className="card__title text-black text-center mb-3">
 								Самостоятельные проекты:
 							</h3>
-							<p
-								aria-label="Самостоятельные проекты"
-								className="w-full about__desc text-black max-w-3xl select-none "
-							>
+							<p className="w-full about__desc text-black max-w-3xl select-none ">
 								Я&nbsp;активно занимаюсь самостоятельными проектами, создавая
 								веб-сайты и&nbsp;приложения для личного использования.
 								Я&nbsp;использую технологии HTML5, CSS (включая фреймворки
