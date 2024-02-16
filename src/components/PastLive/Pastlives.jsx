@@ -3,9 +3,12 @@ const Pastlives = () => {
 		<>
 			<section className="sections experience-section">
 				<div className="container">
-					<h2 className="sections-title text-center mb-[1em]">Past Live</h2>
+					<h2 aria-label="Загаловок Past Live" className="sections-title text-center mb-[1em]">Past Live</h2>
 					<div className="text__content flex justify-center items-center  ">
-						<p className="sections-desc mb-[1em]">
+						<p
+							aria-label="История под названием Past Live Лалила"
+							className="sections-desc mb-[1em]"
+						>
 							Once there was a&nbsp;remarkable story about an&nbsp;unbreakable
 							bond. However, at&nbsp;some point, this bond, which seemed
 							eternal, reached its end, ushering in&nbsp;a&nbsp;new chapter.

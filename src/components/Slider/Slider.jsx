@@ -13,6 +13,7 @@ const Slider = () => {
 				<div className="container">
 					<div className="slider__content">
 						<Swiper
+							aria-label="Слайдер"
 							navigation={true}
 							modules={[Navigation]}
 							className="mySwiper"

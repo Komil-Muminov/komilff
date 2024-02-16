@@ -7,7 +7,7 @@ const Home = () => {
 	return (
 		<>
 			{/* <Products /> */}
-			<PersonPage />
+			<PersonPage ara />
 			<Experience />
 			<Pastlives />
 			<Contacts />

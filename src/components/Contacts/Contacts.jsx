@@ -5,7 +5,12 @@ const Contacts = () => {
 		<>
 			<section className="sections experience-section ">
 				<div className="container">
-					<h2 className="sections-title text-center mb-[1.5em]">Контакты</h2>
+					<h2
+						aria-label="Загаловок контакты"
+						className="sections-title text-center mb-[1.5em]"
+					>
+						Контакты
+					</h2>
 					<div className="contacts__content flex flex-wrap  gap-5 justify-center items-center  ">
 						<Link
 							target="_blank"

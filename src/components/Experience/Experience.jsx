@@ -10,10 +10,16 @@ const Experience = () => {
 					<Slider />
 					<div className="text__content flex flex-col flex-wrap md:flex-nowrap gap-4 justify-center items-center ">
 						<div className="experience__card flex flex-col">
-							<h3 className="card__title text-black text-center mb-3">
+							<h3
+								aria-label="Загаловок"
+								className="card__title text-black text-center mb-3"
+							>
 								Образование и университет:
 							</h3>
-							<p className="w-full about__desc text-black max-w-3xl select-none ">
+							<p
+								aria-label="Обо мне:"
+								className="w-full about__desc text-black max-w-3xl select-none "
+							>
 								Я&nbsp;Комил Муминов, родившийся 1&nbsp;апреля 1997&nbsp;года,
 								начал свой путь образования в&nbsp;средней школе
 								&#8470;&nbsp;88, где учился с&nbsp;2004 по&nbsp;2015&nbsp;год.
@@ -32,7 +38,10 @@ const Experience = () => {
 							<h3 className="card__title text-black text-center mb-3">
 								Самостоятельные проекты:
 							</h3>
-							<p className="w-full about__desc text-black max-w-3xl select-none ">
+							<p
+								aria-label="Самостоятельные проекты"
+								className="w-full about__desc text-black max-w-3xl select-none "
+							>
 								Я&nbsp;активно занимаюсь самостоятельными проектами, создавая
 								веб-сайты и&nbsp;приложения для личного использования.
 								Я&nbsp;использую технологии HTML5, CSS (включая фреймворки
@@ -49,16 +58,12 @@ const Experience = () => {
 								Стремление к росту:
 							</h3>
 							<p className="w-full about__desc text-black max-w-3xl select-none">
-								С&nbsp;тех пор я&nbsp;постоянно стремлюсь
-								к&nbsp;профессиональному и&nbsp;личному росту, а&nbsp;также
-								к&nbsp;применению приобретенных знаний и&nbsp;навыков
-								в&nbsp;реальной жизни.
+								&nbsp;Я&nbsp;постоянно стремлюсь к&nbsp;профессиональному
+								и&nbsp;личному росту, а&nbsp;также к&nbsp;применению
+								приобретенных знаний и&nbsp;навыков в&nbsp;реальной жизни.
 							</p>
 						</div>
 					</div>
-					{/* <small className="text-red-100">
-						*Данный текст написан исскуственным интелектом
-					</small> */}
 				</div>
 			</section>
 		</>
