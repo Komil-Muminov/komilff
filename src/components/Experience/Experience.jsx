@@ -12,14 +12,13 @@ const Experience = () => {
 						<div className="experience__card flex flex-col">
 							<h3
 								aria-label="Загаловок"
-								className="card__title text-black text-center mb-3"
+								className="card__title text-white text-center mb-3"
 							>
 								Образование и университет:
 							</h3>
-							<img src="" alt="" />
 							<p
 								aria-label="Образование и университет:"
-								className="w-full about__desc text-black max-w-3xl select-none "
+								className="w-full about__desc text-white max-w-3xl select-none "
 							>
 								Я&nbsp;Комил Муминов, родившийся 1&nbsp;апреля 1997&nbsp;года,
 								начал свой путь образования в&nbsp;средней школе
@@ -36,10 +35,10 @@ const Experience = () => {
 						</div>
 
 						<div className="experience__card flex flex-col">
-							<h3 className="card__title text-black text-center mb-3">
+							<h3 className="card__title text-white text-center mb-3">
 								Самостоятельные проекты:
 							</h3>
-							<p className="w-full about__desc text-black max-w-3xl select-none ">
+							<p className="w-full about__desc text-white max-w-3xl select-none ">
 								Я&nbsp;активно занимаюсь самостоятельными проектами, создавая
 								веб-сайты и&nbsp;приложения для личного использования.
 								Я&nbsp;использую технологии HTML5, CSS (включая фреймворки
@@ -52,10 +51,10 @@ const Experience = () => {
 						</div>
 
 						<div className="experience__card flex flex-col">
-							<h3 className="card__title text-black text-center mb-3">
+							<h3 className="card__title text-white text-center mb-3">
 								Стремление к росту:
 							</h3>
-							<p className="w-full about__desc text-black max-w-3xl select-none">
+							<p className="w-full about__desc text-white max-w-3xl select-none">
 								&nbsp;Я&nbsp;постоянно стремлюсь к&nbsp;профессиональному
 								и&nbsp;личному росту, а&nbsp;также к&nbsp;применению
 								приобретенных знаний и&nbsp;навыков в&nbsp;реальной жизни.

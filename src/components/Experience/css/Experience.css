@@ -1,6 +1,6 @@
-.about__desc {
+/* .about__desc {
 	user-select: none;
-}
+} */
 
 /* About__card */
 
@@ -18,11 +18,26 @@
 .experience__card {
 	display: flex;
 	flex-wrap: wrap;
-	background: #fbf8f4;
+	background: #4d453cf3;
+	outline: 1px solid rgba(255, 123, 123, 0.476);
 	padding: 30px 20px;
 	border-radius: 20px;
 	min-height: 300px;
 	height: 100%;
 	max-width: 800px;
 	width: 100%;
+	transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.experience__card:hover:not(:focus-visible) {
+	outline: 1px solid rgba(255, 123, 123, 0.885);
+}
+
+.experience__card:focus-visible {
+	outline: 1px solid rgba(255, 83, 83, 0.885);
+}
+
+.experience__card:active:not(:focus-visible) {
+	background: rgba(103, 167, 80, 0.398);
+	outline: none;
 }
