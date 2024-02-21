@@ -1,5 +1,6 @@
 import "./css/Footer.css";
 import { Instagram, GitHub } from "@mui/icons-material";
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,16 +10,22 @@ const Footer = () => {
 				<div className="container">
 					<div className="footer-content text-center flex flex-col  gap-10 ">
 						<div className="footer-left flex flex-col">
-							<h2 aria-label="Адрес" className="footer-left-text">
+							<h2
+								aria-label="Адрес"
+								className="text-2xl footer-left-text mb-2 md:mb-5"
+							>
 								Адрес
 							</h2>
-							<p aria-label="Tajikistan" className="footer-left-text">
+							<p aria-label="Tajikistan" className="text-2xl footer-left-text">
 								Таджикистан | Tajikistan.
 							</p>
 							<p className="footer-left-text">Душанбе | Dushanbe.</p>
 						</div>
 						<div className="footer-center flex flex-col">
-							<h2 aria-label="Загаловок ссылки" className="footer-center-text">
+							<h2
+								aria-label="Загаловок ссылки"
+								className="text-2xl footer-center-text mb-2 md:mb-5"
+							>
 								ССЫЛКИ
 							</h2>
 
@@ -39,7 +46,9 @@ const Footer = () => {
 							</span>
 						</div>
 						<div className="footer-right">
-							<h2 className="footer-right-text">Социальные сети</h2>
+							<h2 className="text-2xl footer-right-text mb-2 md:mb-5">
+								Социальные сети
+							</h2>
 							<div className="social__icons">
 								<Link
 									aria-label="Ссылка на инстаграм"
@@ -49,7 +58,7 @@ const Footer = () => {
 									className="footer-right-link"
 								>
 									{" "}
-									<Instagram />{" "}
+									<Instagram sx={{ fontSize: "3rem" }} />{" "}
 								</Link>
 
 								<Link
@@ -59,7 +68,7 @@ const Footer = () => {
 									rel="noopener noreferrer"
 									className="footer-right-link"
 								>
-									<GitHub />
+									<GitHub sx={{ fontSize: "3rem" }} />
 								</Link>
 							</div>
 						</div>
