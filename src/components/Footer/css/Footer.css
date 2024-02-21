@@ -36,3 +36,7 @@
 .footer-right-link:active {
 	color: #986888;
 }
+
+.experience__card {
+	max-height: 300px;
+}
