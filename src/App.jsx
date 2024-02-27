@@ -11,6 +11,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Pastlives from "./components/PastLive/Pastlives";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Registration from "./components/registration/Registration";
 // import Slider from "./components/Slider/Slider";
 // import Products from "./components/Products/Products";
 // -----------------------------------------------------------------
@@ -25,6 +26,7 @@ function App() {
 	return (
 		<>
 			{/* <Products /> */}
+			<Registration />
 			<NavLinks />
 			<Routes>
 				<Route path="*" element={<ErrorPage />} />
