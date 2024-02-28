@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "./img/logo.png";
 import { useState } from "react";
 
-const NavLinks = () => {
+const Navigation = () => {
 	const [isMobile, setIsMobile] = useState(false);
 	return (
 		<>
@@ -74,4 +74,4 @@ const NavLinks = () => {
 	);
 };
 
-export default NavLinks;
+export default Navigation;
