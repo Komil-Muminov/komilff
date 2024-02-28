@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { TextField, Button } from "@mui/material";
-import Join from "../Join";
-// import Authorization from "../auth/Authorization";
-
 const Registration = () => {
-	const [isPost, setIsPost] = useState(false);
 	const [userInp, setUserInp] = useState({
 		username: "",
 		password: "",
@@ -13,13 +9,44 @@ const Registration = () => {
 
 	const handleSubmite = async (e) => {
 		e.preventDefault();
+
+		try {
+			const response = await fetch("http://localhost:3000/register", {
+				method: "post",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(userInp),
+			});
+
+			if (response.ok) {
+				console.log(`Пользователь успешно зарегистрирован: ${response}`);
+				setUserInp((prev) => ({
+					...prev,
+					username: "",
+					password: "",
+				}));
+			} else {
+				console.log("Ошибка");
+				setUserInp({
+					username: "",
+					password: "",
+				});
+			}
+		} catch (error) {
+			setUserInp({
+				username: "",
+				password: "",
+			});
+			console.log("Ошибка");
+		}
 	};
 	return (
 		<>
-			<section className={isPost ? `hidden` : `sections`}>
+			<section className="sections">
 				<div className="container">
 					<div className="reg__content">
-						<form onSubmit={handleSubmite} className="reg_form flex gap-3">
+						<form className="reg_form flex gap-3">
 							<TextField
 								onChange={(e) =>
 									setUserInp((prev) => ({ ...prev, username: e.target.value }))
@@ -40,7 +67,7 @@ const Registration = () => {
 								label="Пароль"
 								type="password"
 								autoComplete="current-password"
-								name="password"
+								name="Пароль"
 								value={userInp.password}
 								helperText="Пароль должен содержать минимум 5 символов"
 								className="reg_input  text-white"
@@ -50,9 +77,9 @@ const Registration = () => {
 							/>
 
 							<Button
+								onClick={handleSubmite}
 								sx={{ maxWidth: "180px" }}
 								variant="contained"
-								onClick={handleSubmite}
 								color="success"
 							>
 								Зарегистрироваться

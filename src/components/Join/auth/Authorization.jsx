@@ -2,15 +2,46 @@ import { useState } from "react";
 import { TextField, Button } from "@mui/material";
 
 const Authorization = () => {
-	// const [isPost, setIsPost] = useState(false);
-	const [userInp, setUserInp] = useState({
-		username: "",
-		password: "",
-	});
-	const handleSubmite = (e) => {
+	// Значение из input-ов
+	const [userInp, setUserInp] = useState([
+		{
+			username: "",
+			password: "",
+		},
+	]);
+
+	// Запрос на сервер и хранение данных из сервера локально
+	const [getResponse, setGetResponse] = useState([]);
+	const handleSubmite = async (e) => {
 		e.preventDefault();
-		// Ваш код здесь.
+
+		// Запрос на сервер
+		try {
+			const response = await fetch("http://localhost:3000/register");
+			const responseReturn = await response.json();
+			console.log(responseReturn);
+			// хранение локально
+			setGetResponse(responseReturn);
+			handleDataCorrect();
+		} catch (error) {
+			console.log(error);
+		}
 	};
+
+	// Проверка валидности данных для авторизации
+	const handleDataCorrect = () => {
+		if (getResponse && getResponse?.length > 0) {
+			const isValid = getResponse.some(
+				(item) =>
+					item.username == userInp.username &&
+					item.password == userInp.password,
+			);
+			console.log("Данные совпадают");
+		} else {
+			console.log("Данные не совпадают");
+		}
+	};
+
 	return (
 		<>
 			<section className="sections">
@@ -21,11 +52,10 @@ const Authorization = () => {
 								onChange={(e) =>
 									setUserInp((prev) => ({ ...prev, username: e.target.value }))
 								}
-								required={"SSS"}
+								required
 								id="outlined-required"
 								helperText="Логин должен содержать минимум 5 символов"
 								label="Логин"
-								defaultValue="Hello World"
 								type="text"
 								name="username"
 								value={userInp.username}
@@ -45,8 +75,8 @@ const Authorization = () => {
 									setUserInp((prev) => ({ ...prev, password: e.target.value }))
 								}
 							/>
-
 							<Button
+								onClick={handleSubmite}
 								sx={{ maxWidth: "180px" }}
 								variant="contained"
 								color="success"

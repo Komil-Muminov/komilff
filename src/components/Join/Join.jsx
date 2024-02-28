@@ -10,14 +10,6 @@ import { Alert } from "@mui/material";
 // import { Tabs, Tab } from "@mui/material";
 
 const Join = () => {
-	// ------------------------------------------------------------------
-	const errorsObj = {
-		authText: "Авторизуйтесь пожалуйста",
-		registText: "Зарегистрируйтесь пожалуйста",
-		minLengthLog: "Логин должен содержать минимум 5 символов",
-		maxLengthPass: "Пароль должен содержать минимум 5 символов",
-	};
-
 	// -------------------------------------------------------------------
 
 	const [value, setValue] = React.useState("1");
@@ -32,18 +24,14 @@ const Join = () => {
 	};
 
 	// -------------------------------------------------------------------------------------
-	React.useEffect(() => {
-		const showError = document.querySelector(".join_desc");
-	}, [value]);
-
-	// -------------------------------------------------------------------
 	return (
 		<>
 			<section className="sections">
 				<div className="container">
 					<h2 className="sections__title join_title">Добро пожаловать !</h2>
 					<p className="sections__desc join_desc"></p>
-					<div className="join__content bg-white">
+					<div className="join__content bg-white rounded-2xl ">
+						<p className="text">sdasda</p>
 						<Box sx={{ width: "100%", typography: "body1" }}>
 							<TabContext value={value}>
 								<Box
@@ -69,16 +57,24 @@ const Join = () => {
 									</TabList>
 								</Box>
 								<TabPanel value="1">
-									<Alert sx={{ fontSize: "22px" }} severity="success">
-										Авторизуйтесь пожалуйста
-									</Alert>
-									<Authorization />
+									{value === "1" && (
+										<>
+											<Alert sx={{ fontSize: "22px" }} severity="success">
+												Авторизуйтесь пожалуйста
+											</Alert>
+											<Authorization />
+										</>
+									)}
 								</TabPanel>
 								<TabPanel value="2">
-									<Alert sx={{ fontSize: "22px" }} severity="error">
-										Зарегистрируйтесь пожалуйста
-									</Alert>
-									<Registration />
+									{value === "2" && (
+										<>
+											<Alert sx={{ fontSize: "22px" }} severity="error">
+												Зарегистрируйтесь пожалуйста
+											</Alert>
+											<Registration />
+										</>
+									)}
 								</TabPanel>
 							</TabContext>
 						</Box>
