@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Join from "./components/Join/Join";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Home from "./components/Home/Home";
 // import Slider from "./components/Slider/Slider";
 // import Products from "./components/Products/Products";
 // -----------------------------------------------------------------
@@ -28,6 +29,15 @@ function App() {
 					element={
 						<div data-aos="fade-right">
 							<Join />
+						</div>
+					}
+				/>
+
+				<Route
+					path="/Home"
+					element={
+						<div data-aos="fade-right">
+							<Home />
 						</div>
 					}
 				/>

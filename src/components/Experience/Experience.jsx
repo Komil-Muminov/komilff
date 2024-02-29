@@ -8,7 +8,7 @@ const Experience = () => {
 				<div className="container">
 					<h2 className="sections-title text-center">Обо мне</h2>
 					<Slider />
-				n</div>
+				</div>
 			</section>
 		</>
 	);

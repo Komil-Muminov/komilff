@@ -1,26 +1,23 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { TextField, Button } from "@mui/material";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Authorization = () => {
-	// Значение из input-ов
-	const [userInp, setUserInp] = useState([
-		{
-			username: "",
-			password: "",
-		},
-	]);
+	const [userInp, setUserInp] = useState({
+		username: "",
+		password: "",
+	});
 
-	// Запрос на сервер и хранение данных из сервера локально
 	const [getResponse, setGetResponse] = useState([]);
+	const navigate = useNavigate();
+
 	const handleSubmite = async (e) => {
 		e.preventDefault();
-
-		// Запрос на сервер
 		try {
 			const response = await fetch("http://localhost:3000/register");
 			const responseReturn = await response.json();
-			console.log(responseReturn);
-			// хранение локально
 			setGetResponse(responseReturn);
 			handleDataCorrect();
 		} catch (error) {
@@ -28,23 +25,31 @@ const Authorization = () => {
 		}
 	};
 
-	// Проверка валидности данных для авторизации
 	const handleDataCorrect = () => {
 		if (getResponse && getResponse?.length > 0) {
 			const isValid = getResponse.some(
 				(item) =>
-					item.username == userInp.username &&
-					item.password == userInp.password,
+					item.username === userInp.username &&
+					item.password === userInp.password,
 			);
-			console.log("Данные совпадают");
+			if (isValid) {
+				// Уведомление об успешной авторизации
+				toast.success("Йоу поздравляем ! вы успешно авторизовались ");
+				navigate("/Home");
+			} else {
+				// Уведомление об ошибке при авторизации
+				toast.error("Йоу сорян но вы  не юзерян");
+			}
 		} else {
-			console.log("Данные не совпадают");
+			// Уведомление об ошибке при получении данных с сервера
+			toast.error("Произошла ошибка при получении данных с сервера");
 		}
 	};
 
 	return (
 		<>
-			<section className="sections">
+			<ToastContainer position="top-right" autoClose={2000} />
+			<section className="sections ">
 				<div className="container">
 					<div className="auth__content">
 						<form onSubmit={handleSubmite} className="reg_form flex gap-3">
@@ -59,7 +64,7 @@ const Authorization = () => {
 								type="text"
 								name="username"
 								value={userInp.username}
-								className="reg_input  text-white"
+								className="reg_input "
 							/>
 							<TextField
 								required
@@ -70,13 +75,13 @@ const Authorization = () => {
 								autoComplete="current-password"
 								name="password"
 								value={userInp.password}
-								className="reg_input  text-white"
+								className="reg_input text-white"
 								onChange={(e) =>
 									setUserInp((prev) => ({ ...prev, password: e.target.value }))
 								}
 							/>
 							<Button
-								onClick={handleSubmite}
+								type="submit"
 								sx={{ maxWidth: "180px" }}
 								variant="contained"
 								color="success"

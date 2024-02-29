@@ -28,10 +28,8 @@ const Join = () => {
 		<>
 			<section className="sections">
 				<div className="container">
-					<h2 className="sections__title join_title">Добро пожаловать !</h2>
 					<p className="sections__desc join_desc"></p>
 					<div className="join__content bg-white rounded-2xl ">
-						<p className="text">sdasda</p>
 						<Box sx={{ width: "100%", typography: "body1" }}>
 							<TabContext value={value}>
 								<Box

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { TextField, Button } from "@mui/material";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Registration = () => {
 	const [userInp, setUserInp] = useState({
 		username: "",
@@ -26,23 +29,29 @@ const Registration = () => {
 					username: "",
 					password: "",
 				}));
+
+				// Notify
+				toast.success("Йоу вы успешно зарегистрировались");
 			} else {
 				console.log("Ошибка");
 				setUserInp({
 					username: "",
 					password: "",
 				});
+				toast.error("Йоу произошла ошибка при регистрации");
 			}
 		} catch (error) {
 			setUserInp({
 				username: "",
 				password: "",
 			});
-			console.log("Ошибка");
+			console.log(`Ошибка:${error}`);
+			toast.error("Ошибка сервера. Подробнее в clg");
 		}
 	};
 	return (
 		<>
+			<ToastContainer position="top-right" autoClose={2000} />
 			<section className="sections">
 				<div className="container">
 					<div className="reg__content">

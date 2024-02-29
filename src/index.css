@@ -104,6 +104,10 @@ button {
 	padding-bottom: var(--sections--offset);
 }
 
+.footer {
+	padding-top: 54px;
+}
+
 .sections-title {
 	font-size: 1.4rem;
 	color: var(--text-white);
@@ -137,7 +141,7 @@ button {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 45px 45px 45px 45px;
+	padding: 5px 45px 25px 45px;
 }
 
 /* --------------------------------MEDIA-Запросы------------------------------------------------------------- */

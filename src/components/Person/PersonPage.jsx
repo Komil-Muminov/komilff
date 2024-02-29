@@ -1,5 +1,4 @@
 import "./css/Person.css";
-import KM from "./img/KM.png";
 import HtmlIcon from "./img/html5.svg";
 import Css from "./img/css.svg";
 import JS from "./img/JS.svg";

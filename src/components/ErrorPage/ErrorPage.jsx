@@ -1,28 +1,34 @@
 import { Instagram, Email, Google } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 import ErrorRobot from "./img/ErrorRobot.png";
 import Join from "../Join/Join";
 
 const ErrorPage = () => {
 	return (
 		<>
-			<section className="Error-section">
+			<section className="sections Error-section">
 				<div className="container flex flex-col justify-center items-center">
 					<img src={ErrorRobot} alt="Robot" className=" w-1/4 h-1/4" />
 					<div className="text-wrapper flex flex-col justify-center items-center mb-[1.2em]">
-						<h2 className="ErrorPage-title text-3xl text-center md:text-7xl text-red-400">
-							Страница не&nbsp;найдена |
+						<p className="text-red-400 text-2xl mb-4">Упс 😅 </p>
+						<h2 className="ErrorPage-title text-3xl text-center md:text-7xl text-red-400 mb-3">
+							Страница не&nbsp;найдена
 						</h2>
-						<p>Проверьте адрес ссылки или напишите мне |</p>
+						<p>Вы можете авторизоваться или же зарегистрироваться на сайте</p>
+						<Link className="text-red-500 outline border-red-200" to="/Join">
+							Войти на сайт
+						</Link>
+						<p>Проверьте адрес ссылки или напишите мне</p>
 						<h2 className="text-xl">Ба&nbsp;ман нависед</h2>
 					</div>
-					<div className="links-wrapper flex flex-col items-center justify-center ">
+					<div className="links_wrapper flex items-center justify-center gap-2 ">
 						<a
 							rel="noreferrer"
 							href="https://www.instagram.com/komilff/"
 							className="error-Link"
 							target="_blank"
 						>
-							<Instagram />{" "}
+							<Instagram sx={{ fontSize: "40px" }} />{" "}
 						</a>
 
 						<a
@@ -31,7 +37,7 @@ const ErrorPage = () => {
 							className="error-Link"
 							target="_blank"
 						>
-							<Email />{" "}
+							<Email sx={{ fontSize: "40px" }} />{" "}
 						</a>
 
 						<a
@@ -40,11 +46,10 @@ const ErrorPage = () => {
 							className="error-Link"
 							target="_blank"
 						>
-							<Google />{" "}
+							<Google sx={{ fontSize: "40px" }} />{" "}
 						</a>
 					</div>
 				</div>
-				<Join />
 			</section>
 		</>
 	);
