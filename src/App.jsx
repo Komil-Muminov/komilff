@@ -1,15 +1,16 @@
 import { useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // -----------------------------------------------------------------
-// import Home from "./components/Home/Home";
-import Join from "./components/Join/Join";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Navigation from "./navigation/Navigation";
+import Contacts from "./components/Contacts/Contacts";
+import Experience from "./components/Experience/Experience";
+import PersonPage from "./components/Person/PersonPage";
 import Home from "./components/Home/Home";
-// import Slider from "./components/Slider/Slider";
-// import Products from "./components/Products/Products";
+
 // -----------------------------------------------------------------
 
 function App() {
@@ -21,26 +22,13 @@ function App() {
 	}, []);
 	return (
 		<>
+			<Navigation />
 			<Routes>
-				<Route path="/" element={<Navigate to="/Join" />} />
 				<Route path="*" element={<ErrorPage />} />
-				<Route
-					path="/Join"
-					element={
-						<div data-aos="fade-right">
-							<Join />
-						</div>
-					}
-				/>
-
-				<Route
-					path="/Home"
-					element={
-						<div data-aos="fade-right">
-							<Home />
-						</div>
-					}
-				/>
+				<Route path="/Home" element={<Home />} />
+				<Route path="/Contacts" element={<Contacts />} />
+				<Route path="/Experience" element={<Experience />} />
+				<Route path="/PersonPage" element={<PersonPage />} />
 			</Routes>
 			<Footer />
 		</>

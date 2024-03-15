@@ -1,7 +1,6 @@
 import { Instagram, Email, Google } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import ErrorRobot from "./img/ErrorRobot.png";
-import Join from "../Join/Join";
 
 const ErrorPage = () => {
 	return (

@@ -2,12 +2,16 @@ import PersonPage from "../Person/PersonPage";
 import Experience from "../Experience/Experience";
 import Contacts from "../Contacts/Contacts";
 import Pastlives from "../PastLive/Pastlives";
-import Navigation from "../../navigation/Navigation";
-// import Products from "../Products/Products";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useEffect } from "react";
 const Home = () => {
+	useEffect(() => {
+		toast.success("Главная страница");
+	});
 	return (
 		<>
-			<Navigation />
+			<ToastContainer autoClose={1000} position="top-left" />
 			<PersonPage />
 			<Experience />
 			<Pastlives />

@@ -29,13 +29,6 @@ const Navigation = () => {
 						<Link className="nav-link pc-links" to="/Contacts">
 							CONTACTS
 						</Link>
-
-						<Link className="nav-link pc-links" to="/Products">
-							Товары
-						</Link>
-						<Link className="nav-link pc-links" to="/sdasad">
-							NOT
-						</Link>
 					</nav>
 				</div>
 			</header>
