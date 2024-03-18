@@ -4,7 +4,7 @@ import Slider from "../Slider/Slider";
 const Family = () => {
 	return (
 		<>
-			<section className="sections experience-section ">
+			<section className="sections family__sections">
 				<div className="container">
 					<h2 className="sections-title text-center"> Муминовы</h2>
 					<div className="family__content flex gap-4 flex-col justify-center items-center">

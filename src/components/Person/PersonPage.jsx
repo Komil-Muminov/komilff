@@ -41,7 +41,7 @@ const PersonPage = () => {
 								href="mailto:kmuminov0104@gmail.com"
 								className="text-[10px] md:text-xl"
 							>
-								Написать на&nbsp;
+								Написать &nbsp;
 							</a>
 						</Button>
 
@@ -53,13 +53,15 @@ const PersonPage = () => {
 								target="_blank"
 								className="text-[10px] md:text-xl"
 							>
-								Написать на&nbsp;
+								Написать &nbsp;
 							</a>
 						</Button>
 					</div>
 
 					{/* EXPERIENCE */}
-					<h2 className="text-center mb-3 md:mb-5">EXPERIENCE WITH</h2>
+					<h2 className="sections-title text-center mb-3 md:mb-5 ">
+						Мои навыки
+					</h2>
 
 					<div className="experience-img flex flex-wrap justify-center items-center gap-4 md:gap-[60px] ">
 						<img
