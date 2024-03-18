@@ -35,7 +35,11 @@ const PersonPage = () => {
 						<small className="text-red-300"> 01.04 &infin;</small>
 					</div>
 					<div className="person__content flex justify-center items-center gap-3 mb-3 md:mb-5 md:flex-row">
-						<Button variant="outlined" endIcon={<MailOutline />}>
+						<Button
+							sx={{ padding: "20px" }}
+							variant="outlined"
+							endIcon={<MailOutline />}
+						>
 							<a
 								aria-label="Электроная почта"
 								href="mailto:kmuminov0104@gmail.com"
@@ -45,7 +49,11 @@ const PersonPage = () => {
 							</a>
 						</Button>
 
-						<Button variant="outlined" endIcon={<Instagram />}>
+						<Button
+							sx={{ padding: "20px" }}
+							variant="outlined"
+							endIcon={<Instagram />}
+						>
 							<a
 								aria-label="Ссылка на инстаграм"
 								rel="noreferrer"
