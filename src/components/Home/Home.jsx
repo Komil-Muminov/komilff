@@ -1,5 +1,5 @@
 import PersonPage from "../Person/PersonPage";
-import Experience from "../Experience/Experience";
+import Experience from "../Experience/Family";
 import Contacts from "../Contacts/Contacts";
 import Pastlives from "../PastLive/Pastlives";
 import { ToastContainer, toast } from "react-toastify";

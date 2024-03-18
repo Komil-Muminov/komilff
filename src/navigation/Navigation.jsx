@@ -21,10 +21,10 @@ const Navigation = () => {
 							HOME
 						</Link>
 						<Link className="nav-link pc-links" to="/PersonPage">
-							PERSON PAGE
+							ME
 						</Link>
-						<Link className="nav-link pc-links" to="/Experience">
-							EXPERIENCE
+						<Link className="nav-link pc-links" to="/Family">
+							Family
 						</Link>
 						<Link className="nav-link pc-links" to="/Contacts">
 							CONTACTS
@@ -35,7 +35,7 @@ const Navigation = () => {
 
 			<span
 				onClick={() => setIsMobile(!isMobile)}
-				className="flex justify-end items-center md:hidden"
+				className="flex justify-end items-center md:hidden p-1"
 			>
 				<Menu className="isMobile-icon" />
 			</span>
@@ -50,14 +50,11 @@ const Navigation = () => {
 							<Link className="nav-link mobile-links" to="/PersonPage">
 								PERSON PAGE
 							</Link>
-							<Link className="nav-link mobile-links" to="/Experience">
-								EXPERIENCE
+							<Link className="nav-link mobile-links" to="/Family">
+								Family
 							</Link>
 							<Link className="nav-link mobile-links" to="/Contacts">
 								CONTACTS
-							</Link>
-							<Link className="nav-link pc-links" to="/Products">
-								Товары
 							</Link>
 						</nav>
 					</div>

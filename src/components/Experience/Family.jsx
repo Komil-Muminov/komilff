@@ -1,7 +1,7 @@
 import "./css/Experience.css";
 import Slider from "../Slider/Slider";
 
-const Experience = () => {
+const Family = () => {
 	return (
 		<>
 			<section className="sections experience-section ">
@@ -14,4 +14,4 @@ const Experience = () => {
 	);
 };
 
-export default Experience;
+export default Family;
