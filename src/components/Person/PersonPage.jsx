@@ -3,6 +3,8 @@ import HtmlIcon from "./img/html5.svg";
 import Css from "./img/css.svg";
 import JS from "./img/JS.svg";
 import react from "./img/react.svg";
+import { Button } from "@mui/material";
+import { MailOutline, Instagram } from "@mui/icons-material";
 const PersonPage = () => {
 	return (
 		<>
@@ -32,27 +34,32 @@ const PersonPage = () => {
 						</p>
 						<small className="text-red-300"> 01.04 &infin;</small>
 					</div>
-					<div className="person-btn-wrapper flex flex-col justify-center items-center gap-3 md:flex-row">
-						<a
-							aria-label="Электроная почта"
-							href="mailto:kmuminov0104@gmail.com"
-							className="btn person-btn person__btn-email  text-center"
-						>
-							Написать на&nbsp;Почту
-						</a>
-						<a
-							aria-label="Ссылка на инстаграм"
-							rel="noreferrer"
-							href="https://www.instagram.com/komilff"
-							target="_blank"
-							className="btn person-btn person__btn-inst text-center"
-						>
-							Написать на&nbsp;Instagram
-						</a>
+					<div className="person__content flex justify-center items-center gap-3 mb-3 md:mb-5 md:flex-row">
+						<Button variant="outlined" endIcon={<MailOutline />}>
+							<a
+								aria-label="Электроная почта"
+								href="mailto:kmuminov0104@gmail.com"
+								className="text-[10px] md:text-xl"
+							>
+								Написать на&nbsp;
+							</a>
+						</Button>
+
+						<Button variant="outlined" endIcon={<Instagram />}>
+							<a
+								aria-label="Ссылка на инстаграм"
+								rel="noreferrer"
+								href="https://www.instagram.com/komilff"
+								target="_blank"
+								className="text-[10px] md:text-xl"
+							>
+								Написать на&nbsp;
+							</a>
+						</Button>
 					</div>
 
 					{/* EXPERIENCE */}
-					<h2 className="text-center mb-[48px]">EXPERIENCE WITH</h2>
+					<h2 className="text-center mb-3 md:mb-5">EXPERIENCE WITH</h2>
 
 					<div className="experience-img flex flex-wrap justify-center items-center gap-4 md:gap-[60px] ">
 						<img
