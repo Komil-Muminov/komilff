@@ -92,7 +92,14 @@
 	}
 
 	/* Footer */
+
 	.footer-content {
-		padding: 20px 70px;
+		justify-content: center;
+		padding: 10px 0 20px 0;
+		gap: 15px;
+	}
+
+	.footer {
+		padding-top: 10px;
 	}
 }

@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Navigation from "./navigation/Navigation";
 import Contacts from "./components/Contacts/Contacts";
-import Family from "./components/Experience/Family";
+import Family from "./components/Family/Family";
 import PersonPage from "./components/Person/PersonPage";
 import Home from "./components/Home/Home";
 

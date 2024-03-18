@@ -1,5 +1,5 @@
 import PersonPage from "../Person/PersonPage";
-import Experience from "../Experience/Family";
+import Family from "../Family/Family";
 import Contacts from "../Contacts/Contacts";
 import Pastlives from "../PastLive/Pastlives";
 import { ToastContainer, toast } from "react-toastify";
@@ -13,7 +13,7 @@ const Home = () => {
 		<>
 			<ToastContainer autoClose={1000} position="top-left" />
 			<PersonPage />
-			<Experience />
+			<Family />
 			<Pastlives />
 			<Contacts />
 		</>
