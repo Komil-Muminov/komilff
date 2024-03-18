@@ -11,11 +11,11 @@ const Footer = () => {
 						<div className="footer-left flex flex-col">
 							<h2
 								aria-label="Адрес"
-								className="text-2xl footer-left-text mb-2 md:mb-5"
+								className="text-xl footer-left-text mb-2 md:mb-5"
 							>
 								Адрес
 							</h2>
-							<p aria-label="Tajikistan" className="text-2xl footer-left-text">
+							<p aria-label="Tajikistan" className="text-md footer-left-text">
 								Таджикистан | Tajikistan.
 							</p>
 							<p className="footer-left-text">Душанбе | Dushanbe.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
 						<div className="footer-center flex flex-col">
 							<h2
 								aria-label="Загаловок ссылки"
-								className="text-2xl footer-center-text mb-2 md:mb-5"
+								className="text-xl footer-center-text mb-2 md:mb-5"
 							>
 								ССЫЛКИ
 							</h2>
@@ -45,7 +45,7 @@ const Footer = () => {
 							</span>
 						</div>
 						<div className="footer-right">
-							<h2 className="text-2xl footer-right-text mb-2 md:mb-5">
+							<h2 className="text-xl footer-right-text mb-2 md:mb-5">
 								Социальные сети
 							</h2>
 							<div className="social__icons">
