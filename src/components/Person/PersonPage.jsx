@@ -5,6 +5,7 @@ import JS from "./img/JS.svg";
 import react from "./img/react.svg";
 import { Button } from "@mui/material";
 import { MailOutline, Instagram } from "@mui/icons-material";
+import KM from "./img/KM.png";
 const PersonPage = () => {
 	return (
 		<>
@@ -13,11 +14,11 @@ const PersonPage = () => {
 					{/* PERSON */}
 
 					<div className="img__content flex justify-center items-center">
-						{/* <img
+						<img
 							src={KM}
 							alt="km"
 							className="object-cover h-[19em] w-[19em] avatar-wrapper"
-						/> */}
+						/>
 					</div>
 					<div className="text__content flex justify-center items-center flex-col flex-wrap rounded-md mb-[1.3em]">
 						<h1
@@ -38,12 +39,12 @@ const PersonPage = () => {
 						<Button
 							sx={{ padding: "20px" }}
 							variant="outlined"
-							endIcon={<MailOutline />}
+							endIcon={<MailOutline sx={{ color: "#fff" }} />}
 						>
 							<a
 								aria-label="Электроная почта"
 								href="mailto:kmuminov0104@gmail.com"
-								className="text-[10px] md:text-xl"
+								className="text_me text-[10px] md:text-xl"
 							>
 								Написать &nbsp;
 							</a>
@@ -52,14 +53,14 @@ const PersonPage = () => {
 						<Button
 							sx={{ padding: "20px" }}
 							variant="outlined"
-							endIcon={<Instagram />}
+							endIcon={<Instagram sx={{ color: "#fff" }} />}
 						>
 							<a
 								aria-label="Ссылка на инстаграм"
 								rel="noreferrer"
 								href="https://www.instagram.com/komilff"
 								target="_blank"
-								className="text-[10px] md:text-xl"
+								className="text_me text-[10px] md:text-xl"
 							>
 								Написать &nbsp;
 							</a>

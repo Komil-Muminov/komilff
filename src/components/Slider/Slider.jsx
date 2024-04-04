@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Km from "./Km.jpg";
 import Km1 from "./Km1.jpg";
 import { Navigation } from "swiper/modules";
-import slider from "./slider.jpg";
 import "swiper/css/navigation";
 import "swiper/css";
 import "./slider.css";
+import slider from "./slider.jpg";
 const Slider = () => {
 	return (
 		<>
