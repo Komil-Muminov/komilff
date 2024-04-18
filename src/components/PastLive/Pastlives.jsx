@@ -1,4 +1,3 @@
-// import "./css/PastLives.css";
 const Pastlives = () => {
 	return (
 		<>
@@ -13,7 +12,7 @@ const Pastlives = () => {
 					<div className="text__content flex justify-center items-center  ">
 						<p
 							aria-label="История под названием Past Live Лалила"
-							className="sections-desc lalila_text mb-[1em]"
+							className="sections-desc mb-[1em]"
 						>
 							Once there was a&nbsp;remarkable story about an&nbsp;unbreakable
 							bond. However, at&nbsp;some point, this bond, which seemed
