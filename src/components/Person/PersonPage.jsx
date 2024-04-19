@@ -31,7 +31,7 @@ const PersonPage = () => {
 							aria-label="Текст приветствие "
 							className="sections__desc person-desc"
 						>
-							Саламалейкум, Добро пожаловать на&nbsp;мой сайт!
+							Саламалейкум, добро пожаловать на&nbsp;мой сайт!
 						</p>
 						<small className="text-red-300"> 01.04 &infin;</small>
 					</div>

@@ -20,15 +20,6 @@ const Contacts = () => {
 						>
 							INSTAGRAM
 						</Link>
-
-						<Link
-							target="_blank"
-							aria-label="Ссылка на ГуглФормы"
-							to="https://docs.google.com/forms/d/1cM2UPm14NBZQb1yHDaP6KbOWIvEiE0gMrB5wAeww81M/edit"
-							className="w-full md:max-w-[10em] contacts-text"
-						>
-							GoogleForms
-						</Link>
 						<Link
 							aria-label="Ссылка на Gmail"
 							target="_blank"

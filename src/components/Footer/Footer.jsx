@@ -1,5 +1,5 @@
 import "./css/Footer.css";
-import { Instagram, GitHub } from "@mui/icons-material";
+import { Instagram, Facebook } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -15,10 +15,19 @@ const Footer = () => {
 							>
 								Адрес
 							</h2>
-							<p aria-label="Tajikistan" className="text-md footer-left-text">
+							<Link
+								aria-label="Tajikistan"
+								className="text-md footer-left-text footer-center-link"
+							>
 								Таджикистан | Tajikistan.
-							</p>
-							<p className="footer-left-text">Душанбе | Dushanbe.</p>
+							</Link>
+							<Link
+								target="_blank"
+								to="https://maps.app.goo.gl/P1VCQeZjp1nQxfic7"
+								className="text-md footer-left-text footer-center-link"
+							>
+								Душанбе | Dushanbe.
+							</Link>
 						</div>
 						<div className="footer-center flex flex-col">
 							<h2
@@ -62,12 +71,12 @@ const Footer = () => {
 
 								<Link
 									aria-label="Ссылка на гитхаб"
-									to="https://github.com/Komil-Muminov"
+									to="https://www.facebook.com/profile.php?id=100011337580298&mibextid=ZbWKwL"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="footer-right-link"
 								>
-									<GitHub sx={{ fontSize: "3rem" }} />
+									<Facebook sx={{ fontSize: "3rem" }} />
 								</Link>
 							</div>
 						</div>
