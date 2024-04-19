@@ -10,7 +10,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Family from "./components/Family/Family";
 import PersonPage from "./components/Person/PersonPage";
 import Home from "./components/Home/Home";
-// import Map from "./components/Map/Map";
+import Auth from "./Api/Auth/Auth";
 
 // -----------------------------------------------------------------
 
@@ -24,6 +24,7 @@ function App() {
 	return (
 		<>
 			<div className="App">
+				<Auth />
 				<Navigation />
 				<Routes>
 					<Route path="*" element={<ErrorPage />} />
