@@ -46,7 +46,8 @@
 
 body {
 	box-sizing: border-box;
-	background-color: #454040;
+	/* background-color: #454040; */
+	background-color: #1f1f1ff0;
 	color: #fff;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
@@ -143,4 +144,3 @@ button {
 	flex-wrap: wrap;
 	padding: 5px 45px 25px 45px;
 }
-

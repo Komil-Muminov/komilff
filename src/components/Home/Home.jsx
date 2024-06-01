@@ -11,7 +11,7 @@ const Home = () => {
 	});
 	return (
 		<>
-			<ToastContainer autoClose={1000} position="top-left" />
+			{/* <ToastContainer autoClose={1000} position="top-left" /> */}
 			<PersonPage />
 			<Family />
 			<Pastlives />

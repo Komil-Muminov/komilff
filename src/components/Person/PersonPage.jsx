@@ -6,13 +6,20 @@ import react from "./img/react.svg";
 import { Button } from "@mui/material";
 import { MailOutline, Instagram } from "@mui/icons-material";
 import KM from "./img/KM.png";
+// import { animated, useSpring } from "@react-spring/web";
 const PersonPage = () => {
+	// const MyModal = styled(animated.div, {
+	// 	width: "40vw",
+	// 	height: "20vh",
+	// 	borderRadius: "8px",
+	// 	backgroundColor: "$white80",
+	// });
 	return (
 		<>
 			<section className="sections">
 				<div className="container">
 					{/* PERSON */}
-
+					{/* <AnimatedDialog style={MyModal} /> */}
 					<div className="img__content flex justify-center items-center">
 						<img
 							src={KM}
@@ -101,3 +108,6 @@ const PersonPage = () => {
 };
 
 export default PersonPage;
+
+// 	return <animated.div style={props}>Hello World</animated.div>;
+// }
